@@ -1,0 +1,284 @@
+/*======================================================================
+                            MEDIA QUERIES
+=======================================================================*/
+
+/*  styles for dropdown menu  */
+
+@media screen and (min-width: 768px) {
+
+
+    .menu-item-has-children .sub-menu {
+        position: absolute;
+        background: rgba(47,47,47,.8);
+        width: 180px;
+        margin-top: 20px;
+    }
+
+    .menu-item-has-children .sub-menu li {
+        padding: 3px 2px;
+        text-align: center;
+        width: 100%;
+        -ms-transition: background-color 0.4s ease-in-out;
+        -moz-transition: background-color 0.4s ease-in-out;
+        -webkit-transition: background-color 0.4s ease-in-out;
+        -o-transition: background-color 0.4s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    .menu-item-has-children .sub-menu li a{
+        font-size: 0.875rem;
+        -ms-transition: color 0.4s ease-in-out;
+        -moz-transition: color 0.4s ease-in-out;
+        -webkit-transition: color 0.4s ease-in-out;
+        -o-transition: color 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
+        display: block;
+        color: #fff;
+        font-weight: normal;
+        padding: 5px;
+    }
+
+    .menu-item-has-children .sub-menu li:hover {
+        background: rgb(89,89,89);
+    }
+
+    .menu-item-has-children .sub-menu li:hover a {
+        color: #fff;
+    }
+
+    .goods-catalog ul .menu-item-has-children:hover .sub-menu {
+        display: block;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    /*  navigation  */
+    .main-menu {
+        width: 100%;
+        z-index: 9999;
+        float: none;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .navigation-wrap {
+        text-align: center;
+    }
+
+    .main-navigation-menu {
+        max-height: 0;
+    }
+
+    nav .main-navigation-menu li {
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    nav .main-navigation-menu li:first-child {
+        padding-right: 0;
+    }
+
+    nav .main-navigation-menu {
+        padding-left: 0;
+    }
+
+    nav .main-navigation-menu li a{
+        -ms-transition: color 0.4s ease-in-out;
+        -moz-transition: color 0.4s ease-in-out;
+        -webkit-transition: color 0.4s ease-in-out;
+        -o-transition: color 0.4s ease-in-out;
+        transition: color 0.4s ease-in-out;
+    }
+
+    .icon-block {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+
+    /*styles for sub menu  */
+
+    /*.menu-item-has-children .sub-menu {*/
+    /*position: relative;*/
+    /*padding-left: 20px;*/
+    /*display: block;*/
+    /*}*/
+
+    /*.menu-item-has-children .sub-menu li {*/
+    /*padding: 3px 0;*/
+    /*}*/
+
+    /*.menu-item-has-children .sub-menu li a {*/
+    /*font-weight: normal;*/
+    /*font-size: 0.75rem;*/
+    /*}*/
+
+    /*.menu-item-has-children .sub-menu li a:hover,*/
+    /*.menu-item-has-children .sub-menu li a:focus,*/
+    /*.menu-item-has-children .sub-menu li a:active {*/
+    /*text-decoration: underline;*/
+    /*}*/
+
+    /*nav .main-navigation-menu li {*/
+    /*text-align: left;*/
+    /*}*/
+    /*nav > .main-navigation-menu > li > a:after {*/
+    /*display: none;*/
+    /*}*/
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+  
+
+}
+
+
+/*  clearfix for columns  */
+
+
+@media screen and (min-width: 1200px) {
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .col-md-2:nth-child(6n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+
+@media screen and (max-width: 767px)  {
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-3:nth-child(4n+1),
+    .col-xs-4:nth-child(3n+1),
+    .col-xs-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-2:nth-child(6n+1),
+    .col-lg-3:nth-child(4n+1),
+    .col-lg-4:nth-child(3n+1),
+    .col-lg-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .col-md-2:nth-child(6n+1),
+    .col-md-2:nth-child(6n+1),
+    .col-md-3:nth-child(4n+1),
+    .col-md-4:nth-child(3n+1),
+    .col-md-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-2:nth-child(6n+1),
+    .col-sm-3:nth-child(4n+1),
+    .col-sm-4:nth-child(3n+1),
+    .col-sm-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+
+@media screen and (max-width: 767px)  {
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-2:nth-child(6n+1),
+    .col-xs-3:nth-child(4n+1),
+    .col-xs-4:nth-child(3n+1),
+    .col-xs-6:nth-child(2n+1) {
+        clear:left !important;
+    }
+}
+
+
+/*  adding styles for checkboxes in order to better Retina compatibility  */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    /* Retina-specific stuff here */
+    .catalog-checkbox + label:before,
+    .catalog-checkbox:checked + label:before {
+        background-image: url(../images/checkboxes-retina.png);
+    }
+
+
+}

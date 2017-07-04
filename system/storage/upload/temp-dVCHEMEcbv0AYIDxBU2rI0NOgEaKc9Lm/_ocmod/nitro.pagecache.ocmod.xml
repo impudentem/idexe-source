@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <code><![CDATA[isense_nitro_pagecache_200]]></code>
+    <name><![CDATA[NitroPack Page Cache]]></name>
+    <version><![CDATA[2.5.5]]></version>
+    <author><![CDATA[iSenseLabs]]></author>
+    <link><![CDATA[http://isenselabs.com]]></link>
+
+    <file path="system/engine/registry.php">
+        <operation>
+            <search><![CDATA[$this->data[$key] = $value;]]></search>
+            <add position="after"><![CDATA[
+                if ($key == "request" && __FUNCTION__ == "set") {
+                    $GLOBALS["registry"] = $this;
+
+                    require_once DIR_SYSTEM . 'nitro/core/core.php';
+                }
+
+                if ($key == "language" && __FUNCTION__ == "set") {
+                    require_once NITRO_INCLUDE_FOLDER . 'pagecache_top.php';
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="system/library/response.php">
+        <operation>
+            <search limit="1"><![CDATA[$this->level = $level;]]></search>
+            <add position="after"><![CDATA[
+                if (isNitroEnabled() && getNitroPersistence('PageCache.Enabled')) { $this->level = 0; }
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search limit="1"><![CDATA[echo $output;]]></search>
+            <add position="before"><![CDATA[
+                if (!headers_sent() && in_array(strtolower(PHP_SAPI), array("apachehandler", "apache2handler"))) {
+                    header("Connection: close");
+                    header("Content-Length: " . strlen($output));
+                }
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search limit="1"><![CDATA[echo $output;]]></search>
+            <add position="after"><![CDATA[
+                $GLOBALS["nitro_final_output"] = ob_get_contents();
+                $GLOBALS["nitro_headers_list"] = headers_list();
+
+                if (in_array(strtolower(PHP_SAPI), array("apachehandler", "apache2handler"))) {
+                    ob_end_flush();
+                    flush();
+                } else if (function_exists("fastcgi_finish_request")) {
+                    fastcgi_finish_request();
+                }
+
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+                require_once NITRO_INCLUDE_FOLDER . 'pagecache_bottom.php';
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/common/language.php">
+        <operation>
+            <search limit="1"><![CDATA[$this->session->data['language'] = $this->request->post['code'];]]></search>
+            <add position="after"><![CDATA[
+                $this->session->data['NitroSwitchLanguage'] = true;
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/common/currency.php">
+        <operation error="skip">
+            <search limit="1"><![CDATA[$this->currency->set($this->request->post['code']);]]></search>
+            <add position="after"><![CDATA[
+                $this->session->data['NitroSwitchCurrency'] = true;
+            ]]></add>
+        </operation>
+    </file>
+  
+    <file path="catalog/controller/common/currency.php">
+        <operation error="skip">
+            <search limit="1"><![CDATA[$this->session->data['currency'] = $this->request->post['code'];]]></search>
+            <add position="after"><![CDATA[
+                $this->session->data['NitroSwitchCurrency'] = true;
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/model/catalog/product.php">
+        <operation>
+            <search limit="1"><![CDATA[public function getProduct($product_id) {]]></search>
+            <add position="after"><![CDATA[
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+
+                if (getNitroPersistence('PageCache.ClearCacheOnProductEdit')) {
+                    setNitroProductCache($product_id, NITRO_PAGECACHE_FOLDER . generateNameOfCacheFile());
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/model/catalog/category.php">
+        <operation>
+            <search limit="1"><![CDATA[public function getCategory($category_id) {]]></search>
+            <add position="after"><![CDATA[
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+
+                if (getNitroPersistence('PageCache.ClearCacheOnProductEdit')) {
+                    setNitroCategoryCache($category_id, NITRO_PAGECACHE_FOLDER . generateNameOfCacheFile());
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/model/catalog/product.php">
+        <operation>
+            <search limit="1"><![CDATA[public function editProduct($product_id, $data) {]]></search>
+            <add position="after"><![CDATA[
+                $this->load->model('tool/nitro');
+                $this->model_tool_nitro->clearProductCache((int)$product_id);
+
+                if (isset($data['product_category'])) {
+                    foreach ($data['product_category'] as $nitro_category_id) {
+                        $this->model_tool_nitro->clearCategoryCache((int)$nitro_category_id);
+                    }
+                }
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search limit="1"><![CDATA[public function addProduct($data) {]]></search>
+            <add position="after"><![CDATA[
+                $this->load->model('tool/nitro');
+                if (getNitroPersistence('PageCache.ClearCacheOnProductEdit')) {
+                    truncateNitroProductCache();
+                    $filename = getQuickCacheRefreshFilename();
+                    touch($filename);
+                }
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search limit="1"><![CDATA[public function copyProduct($product_id) {]]></search>
+            <add position="after"><![CDATA[
+                $this->load->model('tool/nitro');
+                if (getNitroPersistence('PageCache.ClearCacheOnProductEdit')) {
+                    truncateNitroProductCache();
+                    $filename = getQuickCacheRefreshFilename();
+                    touch($filename);
+                }
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search limit="1"><![CDATA[public function deleteProduct($product_id) {]]></search>
+            <add position="after"><![CDATA[
+                $this->load->model('tool/nitro');
+                if (getNitroPersistence('PageCache.ClearCacheOnProductEdit')) {
+                    truncateNitroProductCache();
+                    $filename = getQuickCacheRefreshFilename();
+                    touch($filename);
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/model/checkout/order.php">
+        <operation>
+            <search limit="1"><![CDATA[$this->db->query("UPDATE " . DB_PREFIX . "product SET quantity = (quantity - " . (int)$order_product['quantity'] . ") WHERE product_id = '" . (int)$order_product['product_id'] . "' AND subtract = '1'");]]></search>
+            <add position="before"><![CDATA[
+                if (!empty($order_product['product_id'])) {
+                    $this->load->model('tool/nitro');
+                    $this->model_tool_nitro->clearProductCache((int)$order_product['product_id']);
+                }
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search limit="1"><![CDATA[$this->db->query("UPDATE `" . DB_PREFIX . "product` SET quantity = (quantity + " . (int)$product['quantity'] . ") WHERE product_id = '" . (int)$product['product_id'] . "' AND subtract = '1'");]]></search>
+            <add position="before"><![CDATA[
+                if (!empty($product['product_id'])) {
+                    $this->load->model('tool/nitro');
+                    $this->model_tool_nitro->clearProductCache((int)$product['product_id']);
+                }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file error="skip" path="catalog/view/theme/journal2/template/common/footer.tpl">
+        <operation error="skip">
+            <search><![CDATA[if ($user->isLogged())]]></search>
+            <add position="replace"><![CDATA[if ($user->isLogged() && function_exists('passesPageCacheValidation') && !passesPageCacheValidation())]]></add>
+        </operation>
+    </file>
+
+    <file error="skip" path="catalog/view/theme/journal2/template/common/footer.tpl">
+        <operation error="skip">
+            <search><![CDATA[<?php if ($this->journal2->html_classes->hasClass('is-admin')): ?>]]></search>
+            <add position="replace"><![CDATA[<?php if ($this->journal2->html_classes->hasClass('is-admin') && function_exists('passesPageCacheValidation') && !passesPageCacheValidation()): ?>]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/controller/catalog/productmanager.php">
+        <operation error="skip">
+            <search><![CDATA[$product_id   		= $this->request->post['pid'];]]></search>
+            <add position="after"><![CDATA[
+                $this->load->model('tool/nitro');
+                $this->model_tool_nitro->clearProductCache($product_id);
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="admin/controller/catalog/productmanager.php">
+        <operation error="skip">
+            <search><![CDATA[$pid_info = $this->model_catalog_product->getProduct($pid);]]></search>
+            <add position="after"><![CDATA[
+                $this->load->model('tool/nitro');
+                $this->model_tool_nitro->clearProductCache($pid);
+            ]]></add>
+        </operation>
+    </file>
+
+    <!-- Compatibility with Bulk Product X-tra -->
+    <file error="skip" path="admin/model/catalog/product_extra.php">
+        <operation error="skip">
+            <search regex="true"><![CDATA[~.*?n (change|add|remove|update)\w+\(\$product_id.*~]]></search>
+            <add position="replace">
+                <![CDATA[$0
+                $this->load->model('tool/nitro');
+                $this->model_tool_nitro->clearProductCache($product_id);
+                ]]>
+            </add>
+        </operation>
+    </file>
+    <!-- End compatibility with Bulk Product X-tra -->
+</modification>

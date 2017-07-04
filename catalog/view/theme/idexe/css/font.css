@@ -1,0 +1,54 @@
+/*  custom fonts  */
+
+@font-face {
+    font-family: "ComfortaaRegular";
+    src: url("../fonts/Comfortaa/ComfortaaRegular.eot");
+    src: url("../fonts/Comfortaa/ComfortaaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Comfortaa/ComfortaaRegular.woff") format("woff"),
+    url("../fonts/Comfortaa/ComfortaaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ComfortaaLight";
+    src: url("../fonts/Comfortaa/ComfortaaLight.eot");
+    src: url("../fonts/Comfortaa/ComfortaaLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Comfortaa/ComfortaaLight.woff") format("woff"),
+    url("../fonts/Comfortaa/ComfortaaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ComfortaaBold";
+    src: url("../fonts/Comfortaa/ComfortaaBold.eot");
+    src: url("../fonts/Comfortaa/ComfortaaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Comfortaa/ComfortaaBold.woff") format("woff"),
+    url("../fonts/Comfortaa/ComfortaaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "UbuntuLight"; */
+
+@font-face {
+    font-family: "UbuntuLight";
+    src: url("../fonts/Ubuntu/UbuntuLight.eot");
+    src: url("../fonts/Ubuntu/UbuntuLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Ubuntu/UbuntuLight.woff") format("woff"),
+    url("../fonts/Ubuntu/UbuntuLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "UbuntuRegular"; */
+@font-face {
+    font-family: "UbuntuRegular";
+    src: url("../fonts/Ubuntu/UbuntuRegular.eot");
+    src: url("../fonts/Ubuntu/UbuntuRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Ubuntu/UbuntuRegular.woff") format("woff"),
+    url("../fonts/Ubuntu/UbuntuRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

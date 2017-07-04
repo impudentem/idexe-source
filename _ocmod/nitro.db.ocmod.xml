@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <code><![CDATA[isense_nitro_db_200]]></code>
+    <name><![CDATA[NitroPack Database Singleton]]></name>
+    <version><![CDATA[2.5.5]]></version>
+    <author><![CDATA[iSenseLabs]]></author>
+    <link><![CDATA[http://isenselabs.com]]></link>
+
+    <file path="system/library/db.php">
+        <operation>
+            <search limit="1"><![CDATA[if (class_exists($class)) {]]></search>
+            <add position="before"><![CDATA[
+                if (class_exists('NitroDb') && defined('VERSION')) {
+                    if (VERSION >= '2.2.0.0') {
+                        $this->adaptor = NitroDb::getInstance();
+                        if ($this->adaptor) return;
+                    } else {
+                        $this->db = NitroDb::getInstance();
+                        if ($this->db) return;
+                    }
+                }
+            ]]></add>
+        </operation>
+    </file>
+</modification>

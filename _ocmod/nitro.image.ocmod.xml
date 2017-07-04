@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <code><![CDATA[isense_nitro_image_200]]></code>
+    <name><![CDATA[NitroPack Image Quality Override]]></name>
+    <version><![CDATA[2.5.5]]></version>
+    <author><![CDATA[iSenseLabs]]></author>
+    <link><![CDATA[http://isenselabs.com]]></link>
+
+    <file path="catalog/controller/product/smp_image.php">
+        <operation>
+            <search limit="1"><![CDATA[header('Cache-Control: max-age=86400');]]></search>
+            <add position="before"><![CDATA[
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+                if (getNitroPersistence('BrowserCache.Images.Period') != 'no-cache') {
+                    $maxage = getNitroPersistence('BrowserCache.Images.Period');
+                } else {
+                    $maxage = false;
+                }
+            ]]></add>
+        </operation>
+        <operation>
+            <search limit="1"><![CDATA[header('Expires: '. gmdate('D, d M Y H:i:s \G\M\T', time() + 86400));]]></search>
+            <add position="after"><![CDATA[header('Last-Modified: Wed, 05 Jun 2009 06:40:46 GMT');]]></add>
+        </operation>
+        <operation>
+            <search limit="1"><![CDATA[header('Cache-Control: max-age=86400');]]></search>
+            <add position="replace"><![CDATA[header('Cache-Control: max-age=' . (string)($maxage ? strtotime($maxage)-time() : 86400));]]></add>
+        </operation>
+        <operation>
+            <search limit="1"><![CDATA[header('Expires: '. gmdate('D, d M Y H:i:s \G\M\T', time() + 86400));]]></search>
+            <add position="replace"><![CDATA[header('Expires: '. gmdate('D, d M Y H:i:s \G\M\T', $maxage ? strtotime($maxage) : time() + 86400));]]></add>
+        </operation>
+    </file>
+
+    <file path="system/library/image.php">
+        <operation>
+            <search limit="1"><![CDATA[public function save($file, $quality = 90) {]]></search>
+            <add position="after"><![CDATA[
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+                require NITRO_INCLUDE_FOLDER . 'image_quality_override.php';
+            ]]></add>
+        </operation>
+    </file>
+    
+    <file path="catalog/model/tool/image.php">
+        <operation>
+          <search regex="true"><![CDATA[~public function resize.*~]]></search>
+          <add position="replace">
+              <![CDATA[$0
+              if (function_exists("getMobilePrefix") && function_exists("getCurrentRoute") && isNitroEnabled() && !isset($this->request->get["save_image_dimensions"])) {
+                $route = getCurrentRoute();
+
+                switch ($route) {
+                case "common/home":
+                    $page_type = "home";
+                    break;
+                case "product/category":
+                    $page_type = "category";
+                    break;
+                case "product/product":
+                    $page_type = "product";
+                    break;
+                default:
+                    $page_type = "";
+                    break;
+                }
+
+                if ($page_type) {
+                    $device_type = ucfirst(trim(getMobilePrefix(true), "-"));
+                    if (!$device_type) {
+                        $device_type = "Desktop";
+                    }
+
+                    $overrides = getNitroPersistence('DimensionOverride.' . $page_type . '.' . $device_type);
+                    if ($overrides) {
+                        foreach ($overrides as $override) {
+                            if ((int)$override["old"]["width"] == (int)$width && (int)$override["old"]["height"] == (int)$height) {
+                                $width = (int)$override["new"]["width"];
+                                $height = (int)$override["new"]["height"];
+                            }
+                        }
+                    }
+                }
+              }
+              ]]>
+          </add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[if (!is_file(DIR_IMAGE . $image_new) || (filectime(DIR_IMAGE . $image_old) > filectime(DIR_IMAGE . $image_new))) {]]></search>
+            <add position="replace"><![CDATA[
+                $nitro_refresh_file = getQuickImageCacheRefreshFilename();
+                $nitro_recache = (getNitroPersistence('Enabled') && getNitroPersistence('ImageCache.OverrideCompression') && is_file(DIR_IMAGE . $image_new) && is_file($nitro_refresh_file)) ? filemtime($nitro_refresh_file) > filectime(DIR_IMAGE . $image_new) : false;
+                if (!is_file(DIR_IMAGE . $image_new) || (filectime(DIR_IMAGE . $image_old) > filectime(DIR_IMAGE . $image_new)) || $nitro_recache) {
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search><![CDATA[$extension = pathinfo($filename, PATHINFO_EXTENSION);]]></search>
+            <add position="before"><![CDATA[
+                if (isset($this->request->get["save_image_dimensions"])) {
+                    if (empty($GLOBALS["reset_session_dimensions"])) {
+                        $GLOBALS["reset_session_dimensions"] = true;
+                        $this->session->data["nitro_image_dimensions"] = array();
+                    }
+
+                    $dimension_string = $width . "x" . $height;
+                    if (!in_array($dimension_string, $this->session->data["nitro_image_dimensions"])) {
+                        $this->session->data["nitro_image_dimensions"][] = $dimension_string;
+                    }
+                }
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search limit="1"><![CDATA[$image->save(DIR_IMAGE . $new_image);]]></search>
+            <add position="after"><![CDATA[
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+                include NITRO_INCLUDE_FOLDER . 'smush_on_demand.php';
+            ]]></add>
+        </operation>
+        
+        <operation>
+            <search limit="1"><![CDATA[copy(DIR_IMAGE . $old_image, DIR_IMAGE . $new_image);]]></search>
+            <add position="after"><![CDATA[
+                require_once DIR_SYSTEM . 'nitro/core/core.php';
+                include NITRO_INCLUDE_FOLDER . 'smush_on_demand.php';
+            ]]></add>
+        </operation>
+   </file>
+    
+    <file path="catalog/model/tool/image.php">
+        <operation>
+            <search limit="1"><![CDATA[if ($width_orig != $width || $height_orig != $height) {]]></search>
+            <add position="before"><![CDATA[
+                $isNitroImageOverrideEnabled = getNitroPersistence('Enabled') && getNitroPersistence('ImageCache.OverrideCompression');
+            ]]></add>
+        </operation>
+        <operation>
+            <search limit="1"><![CDATA[if ($width_orig != $width || $height_orig != $height) {]]></search>
+            <add position="replace"><![CDATA[
+                if ($width_orig != $width || $height_orig != $height || $isNitroImageOverrideEnabled) {
+            ]]></add>
+        </operation>
+    </file>
+</modification>
