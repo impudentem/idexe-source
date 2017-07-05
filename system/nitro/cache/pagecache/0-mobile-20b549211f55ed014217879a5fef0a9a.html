@@ -1,0 +1,247 @@
+<!DOCTYPE html> <html dir="ltr" lang="ru"> <head> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <title>Idexe</title> <base href="http://idexe-online.com.ua/"/> <meta name="description" content="My Store"/> <link href="http://idexe-online.com.ua/image/catalog/cart.png" rel="icon"/> <link rel="stylesheet" href="assets/css/0-mobile-ddcb1a6bc2264417ba1286067706d82a-nitro-combined-d7d538c905a3720208e97fc6359319c3.css" media="screen" type="text/css"/><link rel="stylesheet" href="assets/css/0-mobile-ddcb1a6bc2264417ba1286067706d82a-nitro-combined-443f93187c0f40f0487a9336a7d60a3f.css" media="all" type="text/css"/></head> <body class="common-home"> <header> <div id="top"></div> <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="callbackLabel"> <div class="modal-dialog modal-md" role="document"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <h4 class="modal-title text-overflow" id="callbackLabel">Обратный звонок</h4> </div> <div class="modal-body"> <form name="sentMessage" id="callbackForm" novalidate> <div class="container-fluid"> <div class="row"> <div class="col-md-12"> <div class="row"> <div class="col-md-12 well"> <div class="control-group"> <div class="controls"> <input type="hidden" class="form-control" value="Обратный звонок"/> </div> </div> <div class="control-group"> <div class="controls"> <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> <input type="text" class="form-control" placeholder="Ваше имя" id="callname" required data-validation-required-message="Пожалуйста, напишите как к Вам обращаться"/> </div> </div> </div> <div class="control-group"> <div class="controls"> <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span> <input type="phone" class="form-control" placeholder="Ваш телефон:" id="callphone" required data-validation-required-message="Пожалуйста, сообщите свой номер телефона"/> </div> </div> </div> <div class="control-group"> <div class="controls"> <textarea id="callmess" rows="10" cols="100" class="form-control" placeholder="Сообщение" maxlength="999" style="resize:none" aria-invalid="false"></textarea> </div> </div> </div> </div> </div> </div> </div> <div class="modal-footer text-center"> <div id="success"> </div> <button type="submit" class="btn btn-primary btn-block">Заказать обратный звонок</button> </div> </form> </div> </div> </div> </div> <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel"> <div class="modal-dialog modal-md" role="document"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> <h4 class="modal-title text-overflow" id="feedbackLabel">Написать письмо</h4> </div> <div class="modal-body"> <form name="sentMessage" id="feedbackForm" novalidate> <div class="container-fluid"> <div class="row"> <div class="col-md-12"> <div class="row"> <div class="col-md-12 well"> <div class="control-group"> <div class="controls"> <input type="hidden" class="form-control" value="Обратный звонок"/> </div> </div> <div class="control-group"> <div class="controls"> <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> <input type="text" class="form-control" placeholder="Ваше имя" id="feedname" required data-validation-required-message="Пожалуйста, напишите как к Вам обращаться"/> </div> </div> </div> <div class="control-group"> <div class="controls"> <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span> <input type="phone" class="form-control" placeholder="Ваш телефон:" id="feedphone" required data-validation-required-message="Пожалуйста, сообщите свой номер телефона"/> </div> </div> </div> <div class="control-group"> <div class="controls"> <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span> <input type="email" class="form-control" placeholder="Ваш Email" id="feedemail" required data-validation-required-message="Пожалуйста, сообщите свой Email"/> </div> </div> </div> <div class="control-group"> <div class="controls"> <textarea id="feedmess" rows="10" cols="100" class="form-control" placeholder="Сообщение" maxlength="999" style="resize:none" aria-invalid="false"></textarea> </div> </div> </div> </div> </div> </div> </div> <div class="modal-footer text-center"> <div id="success"> </div> <button type="submit" class="btn btn-primary btn-block">Отправить</button> </div> </form> </div> </div> </div> </div> <div class="top-wrap"> <div class="container clearfix"> <div class="top-wrap__lang"> <form action="http://idexe-online.com.ua/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language"> <select class="language-select" name="code"> <option value="ru-ru" selected>Rus</option> <option value="uk-ua">Ukr</option> <option value="en-gb">Eng</option> </select> <input type="hidden" name="redirect" value="http://idexe-online.com.ua/index.php?route=common/home"/> </form> </div> <div class="dropdown hidden-md hidden-lg"> <button type="button" class="btn btn-menu dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-info" aria-hidden="true"></i> </button> <ul class="dropdown-menu"> <li><a href="http://idexe-online.com.ua/about_us">О компании</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=7">Адреса магазинов</a></li> <li><a href="http://idexe-online.com.ua/delivery">Доставка и оплата</a></li> <li><a href="http://idexe-online.com.ua/blog">Блог</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/contact">Контакты</a></li> </ul> </div> <div class="dropdown hidden-md hidden-lg"> <button type="button" class="btn btn-menu dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-phone" aria-hidden="true"></i> </button> <ul class="dropdown-menu"> <li><a href="tel:+380 95 156 90 09">+380 95 156 90 09</a></li> <li><a href="tel:+380 97 156 90 09">+380 97 156 90 09</a></li> <li><a href="tel:+380 93 156 90 09">+380 93 156 90 09</a></li> </ul> </div> <div class="top-wrap__menu hidden-sm hidden-xs"> <nav> <ul> <li><a href="http://idexe-online.com.ua/about_us">О компании</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=7">Адреса магазинов</a></li> <li><a href="http://idexe-online.com.ua/delivery">Доставка и оплата</a></li> <li><a href="http://idexe-online.com.ua/blog">Блог</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/contact">Контакты</a></li> </ul> </nav> </div> <div class="top-wrap__entrance"> <div class="hidden-md hidden-sm hidden-xs"> <a href="http://idexe-online.com.ua/index.php?route=account/login">Вход</a> <a href="http://idexe-online.com.ua/index.php?route=account/register">Регистрация</a> </div> <div class="visible-md visible-sm visible-xs"> <div class="dropdown"> <a href="http://idexe-online.com.ua/index.php?route=account/login" title="Личный кабинет" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i></a> <ul class="dropdown-menu dropdown-menu-right"> <li><a href="http://idexe-online.com.ua/index.php?route=account/login">Вход</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=account/register">Регистрация</a></li> </ul> </div> </div> </div> <div class="top-wrap__socials"> <ul class="socials-list"> <li> <a href="//www.facebook.com/"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li> <li> <a href="//instagram.com/"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li> </ul> </div> </div> </div> <div class="top-main-wrap"> <div class="container clearfix"> <div class="col-sm-4 col-xs-12 top-main-wrap__contacts"> <ul> <li><a href="tel:+380 95 156 90 09">+380 95 156 90 09</a></li> <li><a href="tel:+380 97 156 90 09">+380 97 156 90 09</a></li> <li><a href="tel:+380 93 156 90 09">+380 93 156 90 09</a></li> </ul> </div> <div class="col-sm-4 col-xs-12 top-main-wrap__logo"> <a href="http://idexe-online.com.ua/index.php?route=common/home"> <img src="http://idexe-online.com.ua/image/catalog/logo.png" title="Idexe" alt="Idexe" class="img-responsive"/> </a> </div> <div class="col-md-4 col-sm-8 col-xs-12 top-main-wrap__cart"> <div id="cart" class="btn-group cart"> <button type="button" data-toggle="dropdown" data-loading-text="Загрузка..." class="cart-button dropdown-toggle"><span id="cart-total"><span class="cart-icon">0</span> <span class="total-sum-val">0</span><span class="total-sum-cur"> грн</span></span></button> <ul class="dropdown-menu pull-right"> <li> <p class="text-center">Ваша корзина пуста!</p> </li> </ul> </div> <div class="search" id="search"> <div id="custom-search-input"> <input type="text" name="search" value="" placeholder="Поиск" class="inputbox"/> <span> <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button> </span> </div> </div> </div> </div> </div> <div class="main-navigation"> <div class="container"> <div class="main-menu-container"> <button type="button" class="navbar-toggle btn-navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <nav class="main-menu"> <ul> <li><a href="http://idexe-online.com.ua/blog/novosti">Новости</a></li> <li> <a href="http://idexe-online.com.ua/girls">Девочки</a> </li> <li> <a href="http://idexe-online.com.ua/boys">Мальчики</a> </li> <li><a href="http://idexe-online.com.ua/index.php?route=product/special">Распродажа</a></li> <li><a href="http://idexe-online.com.ua/franchise">Франшиза</a></li> <li><a href="http://idexe-online.com.ua/blog/akcii">Акции</a></li> </ul> </nav> </div> </div> </div> </header> <div class="delivery"> <div class="container"> бесплатная доставка </div> </div> <section> <div id="top-carousel" class="banners-carousel owl-carousel owl-theme"> <div class="item"> <img src="http://idexe-online.com.ua/image/cache/catalog/slider/banner_03-cr-1903x915.jpg" alt="Slide 1"/> </div> <div class="item"> <img src="http://idexe-online.com.ua/image/cache/catalog/slider/banner_03-cr-1903x915.jpg" alt="Slide 2"/> </div> </div> </section> <div class="content"> <div class="clearfix"> <div id="content" class="col-sm-12"><section class="top-goods-section"> <div class="container"> <div class="section-title text-uppercase">Хит продаж</div> <div class="top-carousel owl-carousel owl-theme"> <div class="item"> <a href="http://idexe-online.com.ua/index.php?route=product/product&amp;product_id=59"> <span class="goods-img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/DSC_2411-cr-280x380.jpg" alt="БОМБЕР, ПОЛНОСТЬЮ УКРАШЕННЫЙ ПАЙЕТКАМИ" title="БОМБЕР, ПОЛНОСТЬЮ УКРАШЕННЫЙ ПАЙЕТКАМИ"/> </span> </a> <h4 class="product-title"><a href="http://idexe-online.com.ua/index.php?route=product/product&amp;product_id=59">БОМБЕР, ПОЛНОСТЬЮ УКРАШЕННЫЙ ПАЙЕТКАМИ</a></h4> <div class="product-price"> <div class="default-price"><span class="product-price__val">1000</span><span class="product-price__cur"> грн</span></div> </div> </div> <div class="item"> <a href="http://idexe-online.com.ua/index.php?route=product/product&amp;product_id=60"> <span class="goods-img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/man/item_05-cr-280x380.jpg" alt="БОМБЕР, ПОЛНОСТЬЮ УКРАШЕННЫЙ ПАЙЕТКАМИ" title="БОМБЕР, ПОЛНОСТЬЮ УКРАШЕННЫЙ ПАЙЕТКАМИ"/> </span> </a> <h4 class="product-title"><a href="http://idexe-online.com.ua/index.php?route=product/product&amp;product_id=60">БОМБЕР, ПОЛНОСТЬЮ УКРАШЕННЫЙ ПАЙЕТКАМИ</a></h4> <div class="product-price"> <div class="default-price"><span class="product-price__val">1000</span><span class="product-price__cur"> грн</span></div> </div> </div> </div> </div> </section> </div> </div> </div> <section class="action-section"> <div class="img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/banners/index3_18-1600x580.jpg" alt="акции" class="img-responsive"/> </div> <div class="link-wrap"> <div class="container"> <a href="/akcii" class="view-all-actions"><span>смотреть все</span><span>акции</span></a> </div> </div> </section> <section class="collection-section"> <div class="container clearfix"> <div class="section-title text-uppercase">Коллекции</div> <div class="col-sm-4 col-xs-12"> <a href="http://idexe-online.com.ua/index.php?route=product/category&amp;path=69_70"> <div class="img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/categories/collections_21-cr-380x380.jpg" alt="0-9 месяцев"/> </div> <div class="collection-name"> 0-9 месяцев </div> </a> </div> <div class="col-sm-4 col-xs-12"> <a href="http://idexe-online.com.ua/index.php?route=product/category&amp;path=69_71"> <div class="img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/categories/collections_23-cr-380x380.jpg" alt="9-36 месяцев"/> </div> <div class="collection-name"> 9-36 месяцев </div> </a> </div> <div class="col-sm-4 col-xs-12"> <a href="http://idexe-online.com.ua/index.php?route=product/category&amp;path=69_72"> <div class="img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/categories/collections_25-cr-380x380.jpg" alt="3-14 лет"/> </div> <div class="collection-name"> 3-14 лет </div> </a> </div> </div> </section> <section class="about-section "> <div class="about-container"> <div class="section-title text-uppercase">O компании</div> <div class="about-text"> <p>Итальянский бренд детской одежды. Это мощное производство с более чем 40-летним опытом работы на рынке и объемом 11000000 изготовленной и прод анной продукции. Это мировой лидер в отрасли моды для детей и подростков. История бренда началась в апреле 2000 года — открытием первого пункта продажи в городе Турин. Благодаря многолетнему опыту, IDEX за короткое время стал одним из основных протагонистов одежды для детей от 0 до 14 лет на итальянском и международном рынках.</p> </div> <div class="advantages-wrap"> <div class="advantages-item"> <div class="img-adv"> <img src="catalog/view/theme/idexe/images/quality.png" alt=""/> </div> <h3>Высокое качество ткани</h3> </div> <div class="advantages-item"> <div class="img-adv"> <img src="catalog/view/theme/idexe/images/delivery.png" alt=""/> </div> <h3>Бесплатная доставка и возврат</h3> </div> <div class="advantages-item"> <div class="img-adv"> <img src="catalog/view/theme/idexe/images/ukraine.png" alt=""/> </div> <h3>Работаем по всей Украине</h3> </div> </div> </div> </section> <section class="news-section"> <div class="container clearfix"> <div class="section-title text-uppercase">Новости</div> <div class="row"> <div class="col-md-3 col-sm-6 news-item"> <div class="img-wrap"> <a href="http://idexe-online.com.ua/blog/optimistichnaya-roskosh-vse-delo-v-sumke2"> <img src="http://idexe-online.com.ua/image/cache/catalog/news/news2-cr-280x340.jpg" alt="«Оптимистичная роскошь»? Все дело в сумке!"/> </a> <div class="news-item__description"> <div class="news-date">18/05</div> <h3 class="news-name"><a href="http://idexe-online.com.ua/blog/optimistichnaya-roskosh-vse-delo-v-sumke2">«Оптимистичная роскошь»? Все дело в сумке!</a></h3> </div> </div> </div> <div class="col-md-3 col-sm-6 news-item"> <div class="img-wrap"> <a href="http://idexe-online.com.ua/blog/optimistichnaya-roskosh-vse-delo-v-sumke"> <img src="http://idexe-online.com.ua/image/cache/catalog/news/news2-cr-280x340.jpg" alt="«Оптимистичная роскошь»? Все дело в сумке!"/> </a> <div class="news-item__description"> <div class="news-date">18/05</div> <h3 class="news-name"><a href="http://idexe-online.com.ua/blog/optimistichnaya-roskosh-vse-delo-v-sumke">«Оптимистичная роскошь»? Все дело в сумке!</a></h3> </div> </div> </div> <div class="col-md-3 col-sm-6 news-item"> <div class="img-wrap"> <a href="http://idexe-online.com.ua/blog/without-hands"> <img src="http://idexe-online.com.ua/image/cache/catalog/news/news-1_37-cr-280x340.jpg" alt="Без рук: поясные и нагрудные сумки — новый модный фетиш 2"/> </a> <div class="news-item__description"> <div class="news-date">16/05</div> <h3 class="news-name"><a href="http://idexe-online.com.ua/blog/without-hands">Без рук: поясные и нагрудные сумки — новый модный фетиш 2</a></h3> </div> </div> </div> <div class="col-md-3 col-sm-6 news-item"> <div class="img-wrap"> <a href="http://idexe-online.com.ua/blog/credit"> <img src="http://idexe-online.com.ua/image/cache/catalog/DSC_2411-cr-280x340.jpg" alt="Кредит 0% за 5 минут без документов!"/> </a> <div class="news-item__description"> <div class="news-date">16/05</div> <h3 class="news-name"><a href="http://idexe-online.com.ua/blog/credit">Кредит 0% за 5 минут без документов!</a></h3> </div> </div> </div> </div> <div class="all-news-block clearfix"> <a href="http://idexe-online.com.ua/blog/novosti">смотреть все новости</a> </div> </div> </section> <section class="subscribe-section"> <div class="subsribe-container form-inline clearfix"> <div class="form-group"> <label for="subscriber_email" class="subscribe-label">Подпишитесь на наши новости</label> <input type="email" name="subscriber_email" id="subscriber_email" class="form-control email-subscribe" placeholder="Введите ваш email"/> <button type="submit" name="submit_newsletter" id="submit_newsletter" onclick="return MgkEmailValidation()" class="subscribe-button">подписаться</button> <p id="subscriber_content" class="alert-success"></p> </div> </div> </section> <section class="visit-section"> <div class="visit-container"> <div class="img-wrap"> <img src="http://idexe-online.com.ua/image/cache/catalog/logo-bottom-268x50.png" alt="Idexe" title="Idexe"/> </div> <div class="visit-title text-uppercase">посетите наш магазин</div> <div class="visit-address">Украина, г.Киев, Подольский район<br/> </div> <div class="visit-question text-uppercase">есть вопросы?</div> <a href="javascript: void(0);" class="question-link" data-toggle="modal" data-target="#feedback">напишите нам</a> </div> </section> <footer> <div class="footer-wrap"> <div class="container clearfix"> <div class="footer-wrap__company"> <h4>Компания</h4> <nav> <ul> <li><a href="http://idexe-online.com.ua/about_us">Компания</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=12">Карьера</a></li> <li><a href="javascript: void(0);">Корпоративный сайт</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=7">Адреса магазинов</a></li> <li><a href="http://idexe-online.com.ua/franchise">Франшиза</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/contact">Контакты</a></li> </ul> </nav> </div> <div class="footer-wrap__catalog"> <h4>Каталог</h4> <nav> <ul> <li><a href="http://idexe-online.com.ua/blog/novosti">Новости</a></li> <li> <a href="http://idexe-online.com.ua/girls">Девочки</a> </li> <li> <a href="http://idexe-online.com.ua/index.php?route=product/category&amp;path=69">Коллекции</a> </li> <li> <a href="http://idexe-online.com.ua/boys">Мальчики</a> </li> <li><a href="http://idexe-online.com.ua/index.php?route=product/special">Распродажа</a></li> <li><a href="<b>Notice</b>: Undefined variable: action in <b>/home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl</b> on line <b>43</b>">Акции</a></li> <li><a href="javascript: void(0);">Каталог(pdf)</a></li> </ul> </nav> </div> <div class="footer-wrap__support"> <h4>Поддержка</h4> <nav> <ul> <li><a href="javascript: void(0);">Клиентская служба</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=11">Возврат товара и возмещение стоимости</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=9">Таблица размеров</a></li> <li><a href="http://idexe-online.com.ua/delivery">Доставка и оплата</a></li> <li><a href="http://idexe-online.com.ua/blog">Блог</a></li> </ul> </nav> </div> <div class="footer-wrap__links"> <h4>Правовые ссылки</h4> <nav> <ul> <li><a href="http://idexe-online.com.ua/terms">Условия продажи</a></li> <li><a href="http://idexe-online.com.ua/privacy">Политика конфиденциальности</a></li> <li><a href="http://idexe-online.com.ua/index.php?route=information/information&amp;information_id=10">Политика в отношении файлов</a></li> </ul> </nav> </div> <div class="footer-wrap__socials"> <h4>следите за нами</h4> <ul class="socials-list"> <li> <a href="//www.facebook.com/"> <i class="fa fa-facebook" aria-hidden="true"></i> </a> </li> <li> <a href="//instagram.com/"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li> </ul> <div class="cards"> <img src="catalog/view/theme/idexe/images/cards.png" alt=""/> </div> </div> </div> </div> <div class="copyright"> <span>Idexe 2017 </span><span>Все права защищены &copy;</span> </div> </footer> <script src="assets/js/0-mobile-ddcb1a6bc2264417ba1286067706d82a-nitro-combined-76e204fdc4e0b31044b4429961046ad1.js" type="text/javascript"></script><script type="text/javascript"><!--
+	$(function() {
+		$("#callbackForm input, #callbackForm textarea").jqBootstrapValidation({
+			preventSubmit: true,
+			submitError: function($form, event, errors) { },
+			submitSuccess: function($form, event) {
+				event.preventDefault();
+
+				var callname = $("input#callname").val(),  
+					callphone = $("input#callphone").val(),
+					callmessage = $("textarea#callmess").val(),
+					firstName = callname; 
+
+					if (firstName.indexOf(' ') >= 0) {
+						firstName = callname.split(' ').slice(0, -1).join(' ');
+					}
+					
+					$.ajax({
+						url: "index.php?route=common/home/callback",
+						type: "POST",
+						data: {callname: callname, callphone: callphone, callmessage: callmessage},
+						cache: false,
+						success: function() {  
+							$('#callback #success').html("<div class='alert alert-success'>");
+							$('#callback #success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append( "</button>");
+							$('#callback #success > .alert-success').append("Ваш запрос успешно отправлен!<br />Менеджер свяжется с Вами в ближайшее время.");
+							$('#callback #success > .alert-success').append('</div>');
+							$('#callbackForm').trigger("reset");
+						},
+						error: function() {   
+							$('#callback #success').html("<div class='alert alert-danger'>");
+							$('#callback #success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append( "</button>");
+							$('#callback #success > .alert-danger').append("Запрос не может быть отправлен.<br />Свяжитесь с нами любым другим удобным способом.");
+							$('#callback #success > .alert-danger').append('</div>');
+							$('#callbackForm').trigger("reset");
+						},
+					});
+				},
+				filter: function() {
+					return $(this).is(":visible");
+				},
+			});
+		});
+
+		$('#callname').focus(function() {
+			$('#success').html('');
+		});
+--></script><script type="text/javascript"><!--
+	$(function() {
+		$("#feedbackForm input, #feedbackForm textarea").jqBootstrapValidation({
+			preventSubmit: true,
+			submitError: function($form, event, errors) { },
+			submitSuccess: function($form, event) {
+				event.preventDefault();
+
+				var feedname = $("input#feedname").val(),  
+					feedphone = $("input#feedphone").val(),
+					feedemail = $("input#feedemail").val(),
+					feedmessage = $("textarea#feedmess").val(),
+					firstName = feedname; 
+
+					if (firstName.indexOf(' ') >= 0) {
+						firstName = feedname.split(' ').slice(0, -1).join(' ');
+					}
+					
+					$.ajax({
+						url: "index.php?route=common/home/feedback",
+						type: "POST",
+						data: {feedname: feedname, feedphone: feedphone, feedemail: feedemail, feedmessage: feedmessage},
+						cache: false,
+						success: function() {  
+							$('#feedbackForm #success').html("<div class='alert alert-success'>");
+							$('#feedbackForm #success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append( "</button>");
+							$('#feedbackForm #success > .alert-success').append("Ваш запрос успешно отправлен!<br />Менеджер свяжется с Вами в ближайшее время.");
+							$('#feedbackForm #success > .alert-success').append('</div>');
+							$('#feedbackForm').trigger("reset");
+						},
+						error: function() {   
+							$('#feedbackForm #success').html("<div class='alert alert-danger'>");
+							$('#feedbackForm #success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append( "</button>");
+							$('#feedbackForm #success > .alert-danger').append("Запрос не может быть отправлен.<br />Свяжитесь с нами любым другим удобным способом.");
+							$('#feedbackForm #success > .alert-danger').append('</div>');
+							$('#feedbackForm').trigger("reset");
+						},
+					});
+				},
+				filter: function() {
+					return $(this).is(":visible");
+				},
+			});
+		});
+
+		$('#feedname').focus(function() {
+			$('#success').html('');
+		});
+--></script><script type="text/javascript"><!--
+    $("#top-carousel").owlCarousel({
+        loop:true,
+        margin:0,
+        items: 1,
+        nav : true,
+        dots: false,
+        autoplay: true
+    });
+--></script><script type="text/javascript">
+function MgkEmailValidation(mail)   
+{  
+	subscribemail = document.getElementById("subscriber_email").value;
+	var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+	if (subscribemail != '') { 
+
+	    if ( subscribemail.search(emailRegEx)!=-1 ) {
+		    email = document.getElementById("subscriber_email").value;
+		    var xmlhttp;
+		    if (window.XMLHttpRequest){
+			    xmlhttp=new XMLHttpRequest();
+		    }else{
+			    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		    }
+		    
+		    xmlhttp.onreadystatechange=function() {
+			    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				    document.getElementById("subscriber_content").innerHTML=xmlhttp.responseText;
+			    }
+		    }
+		    xmlhttp.open("GET","index.php?route=extension/module/newslettersubscription/addsubscriberemail&email="+email,true);
+		    xmlhttp.send();
+		    return (true) ; 
+	  }  
+		  document.getElementById("subscriber_content").innerHTML="Please enter an email address.";
+		  return (false); 
+	}
+		document.getElementById("subscriber_content").innerHTML="This is a required field.";
+		return false;
+}  
+</script><script type="text/javascript"><!--
+						$("#callphone").mask("+38(999)999-99-99");
+						$("#feedphone").mask("+38(999)999-99-99");
+					--></script><script type="text/javascript"><!--
+					var live_search = {
+						selector: '#search input[name=\'search\']',
+						text_no_matches: 'Нет товаров, которые соответствуют критериям поиска.',
+						height: '50px'
+					}
+
+					$(document).ready(function() {
+						var html = '';
+						html += '<div class="live-search">';
+						html += '	<ul>';
+						html += '	</ul>';
+						html += '<div class="result-text"></div>';
+						html += '</div>';
+
+						//$(live_search.selector).parent().closest('div').after(html);
+						$(live_search.selector).after(html);
+
+						$(live_search.selector).autocomplete({
+							'source': function(request, response) {
+								var filter_name = $(live_search.selector).val();
+								var live_search_min_length = '1';
+								if (filter_name.length < live_search_min_length) {
+									$('.live-search').css('display','none');
+								}
+								else{
+									var html = '';
+									html += '<li style="text-align: center;height:10px;">';
+									html +=	'<img class="loading" src="catalog/view/theme/default/image/loading.gif" />';
+									html +=	'</li>';
+									$('.live-search ul').html(html);
+									$('.live-search').css('display','block');
+
+									$.ajax({
+										url: 'index.php?route=product/live_search&filter_name=' +  encodeURIComponent(filter_name),
+										dataType: 'json',
+										success: function(result) {
+											var products = result.products;
+											$('.live-search ul li').remove();
+											$('.result-text').html('');
+											if (!$.isEmptyObject(products)) {
+												var show_image = 1;
+												var show_price = 1;
+												var show_description = 0;
+												$('.result-text').html('<a href="http://idexe-online.com.ua/index.php?route=product/search&amp;search='+filter_name+'" class="view-all-results">все результаты ('+result.total+')</a>');
+
+												$.each(products, function(index,product) {
+													var html = '';
+													
+													html += '<li>';
+													html += '<a href="' + product.url + '" title="' + product.name + '">';
+													if(product.image && show_image){
+														html += '	<div class="product-image"><img alt="' + product.name + '" src="' + product.image + '"></div>';
+													}
+													html += '	<div class="product-name">' + product.name ;
+													if(show_description){
+														html += '<p>' + product.extra_info + '</p>';
+													}
+													html += '</div>';
+													if(show_price){
+														if (product.special) {
+															html += '	<div class="product-price"><span class="special">' + product.price + '</span><span class="price">' + product.special + '</span></div>';
+														} else {
+															html += '	<div class="product-price"><span class="price">' + product.price + '</span></div>';
+														}
+													}
+													html += '<span style="clear:both"></span>';
+													html += '</a>';
+													html += '</li>';
+													$('.live-search ul').append(html);
+												});
+											} else {
+												var html = '';
+												html += '<li style="text-align: center;height:10px;">';
+												html +=	live_search.text_no_matches;
+												html +=	'</li>';
+
+												$('.live-search ul').html(html);
+											}
+											$('.live-search ul li').css('height',live_search.height);
+											$('.live-search').css('display','block');
+											return false;
+										}
+									});
+								}
+							},
+							'select': function(product) {
+								$(live_search.selector).val(product.name);
+							}
+						});
+
+						$(document).bind( "mouseup touchend", function(e){
+						  var container = $('.live-search');
+						  if (!container.is(e.target) && container.has(e.target).length === 0)
+						  {
+						    container.hide();
+						  }
+						});
+					});
+				//--></script><script type="text/javascript">
+var nitro_xhr;
+if (window.XMLHttpRequest){nitro_xhr=new XMLHttpRequest();}
+else{nitro_xhr=new ActiveXObject("Microsoft.XMLHTTP");}
+nitro_xhr.onreadystatechange=function(){if (nitro_xhr.readyState==4 && nitro_xhr.status==200){var nitroBarWrapper = document.createElement('div'); nitroBarWrapper.innerHTML = nitro_xhr.responseText; document.body.appendChild(nitroBarWrapper);}}
+nitro_xhr.open("GET","index.php?route=tool/nitro/getwidget&cachefile=MC1tb2JpbGUtMjBiNTQ5MjExZjU1ZWQwMTQyMTc4NzlhNWZlZjBhOWEuaHRtbA==&render_time=25.458148956299",true);
+nitro_xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+nitro_xhr.send();
+</script>
+</body></html>

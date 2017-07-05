@@ -1,23 +1,23 @@
 # STARTNITRO
 ExpiresActive On
 
-#CSS JS XML TXT - 1 WEEK
+#CSS JS XML TXT - 1 MONTH
 <FilesMatch "\.(xml|txt|css|js)$">
-Header set Cache-Control "max-age=604800, public"
-ExpiresDefault "access plus 1 week"
-</FilesMatch>
-
-#JPG JPEG PNG GIF SWF SVG - 1 MONTH
-<FilesMatch "\.(jpg|jpeg|png|gif|swf|svg|JPG|JPEG|PNG|GIF|SWF|SVG)$">
 Header set Cache-Control "max-age=2678400, public"
 ExpiresDefault "access plus 1 month"
+</FilesMatch>
+
+#JPG JPEG PNG GIF SWF SVG - 1 WEEK
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|svg|JPG|JPEG|PNG|GIF|SWF|SVG)$">
+Header set Cache-Control "max-age=604800, public"
+ExpiresDefault "access plus 1 week"
 Header set Last-Modified "Wed, 05 Jun 2009 06:40:46 GMT"
 </FilesMatch>
 
-#OTF WOFF TTF ICO PDF FLV - 1 MONTH
+#OTF WOFF TTF ICO PDF FLV - 1 WEEK
 <FilesMatch "\.(otf|ico|pdf|flv|woff|ttf)$">
-Header set Cache-Control "max-age=2678400, public"
-ExpiresDefault "access plus 1 month"
+Header set Cache-Control "max-age=604800, public"
+ExpiresDefault "access plus 1 week"
 </FilesMatch>
 # ENDNITRO
 # STARTCOMPRESSNITRO
@@ -25,10 +25,10 @@ RewriteEngine On
 RewriteRule .* - [E=HTTP_IF_MODIFIED_SINCE:%{HTTP:If-Modified-Since}]
 
 RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^(\/?((catalog)|(assets)).+)\.css$ assets/style.php?l=4&p=$1&c=604800 [NC,L]
+RewriteRule ^(\/?((catalog)|(assets)).+)\.css$ assets/style.php?l=4&p=$1&c=2592000 [NC,L]
 
 RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^(\/?((catalog)|(assets)).+)\.js$ assets/script.php?l=4&p=$1&c=604800 [NC,L]
+RewriteRule ^(\/?((catalog)|(assets)).+)\.js$ assets/script.php?l=4&p=$1&c=2592000 [NC,L]
 AddType image/svg+xml .svg
 AddOutputFilterByType DEFLATE image/svg+xml
 AddType application/x-font-woff .woff

@@ -1,0 +1,38 @@
+
+    .bf-responsive.bf-active.bf-layout-id-36 .bf-check-position {
+        top: 80px;
+    }
+    .bf-responsive.bf-active.bf-layout-id-36 .bf-btn-show, 
+    .bf-responsive.bf-active.bf-layout-id-36 .bf-btn-reset {
+        top: 80px;
+    }
+    .bf-layout-id-36 .bf-btn-show {
+            background: #19A3DF;
+        }
+    .bf-layout-id-36 .bf-btn-reset {
+            background: #F53838;
+        }
+    .bf-layout-id-36 .bf-attr-header{
+       background: #f7f7f7; 
+       color: #000000; 
+    }
+    .bf-layout-id-36 .bf-count{
+        background: #F46234; 
+       color: #ffffff; 
+    }
+   .bf-layout-id-36 .ui-widget-header {
+        background: #f6a828; 
+   }
+   .bf-layout-id-36 .ui-widget-content {
+         background: #eeeeee; 
+         border:1px solid #dddddd; 
+   }
+.bf-layout-id-36 .ui-state-default {
+         background: #f6f6f6; 
+         border:1px solid #cccccc; 
+   }
+  .bf-layout-id-36 .bf-attr-group-header{
+        background: #CECBCB; 
+       color: #000000; 
+  }
+  
