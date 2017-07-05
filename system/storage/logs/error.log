@@ -183,3 +183,16 @@
 2017-07-05 18:20:53 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
 2017-07-05 18:21:32 - PHP Notice:  Undefined variable: username in /home/idexeonl/idexe-online.com.ua/www/admin/view/template/common/column_left.tpl on line 5
 2017-07-05 18:22:01 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 18:44:54 - PHP Notice:  Undefined variable: username in /home/idexeonl/idexe-online.com.ua/www/admin/view/template/common/column_left.tpl on line 5
+2017-07-05 18:45:37 - PHP Notice:  Undefined variable: username in /home/idexeonl/idexe-online.com.ua/www/admin/view/template/common/column_left.tpl on line 5
+2017-07-05 18:45:38 - PHP Notice:  Undefined variable: username in /home/idexeonl/idexe-online.com.ua/www/admin/view/template/common/column_left.tpl on line 5
+2017-07-05 18:45:42 - PHP Notice:  Undefined variable: username in /home/idexeonl/idexe-online.com.ua/www/admin/view/template/common/column_left.tpl on line 5
+2017-07-05 18:45:46 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 18:46:54 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 18:47:04 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 18:47:26 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 18:47:55 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 18:48:17 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 19:01:30 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 19:15:35 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43
+2017-07-05 19:16:02 - PHP Notice:  Undefined variable: action in /home/idexeonl/idexe-online.com.ua/www/system/storage/modification/catalog/view/theme/idexe/template/common/footer.tpl on line 43

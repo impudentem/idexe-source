@@ -1,0 +1,193 @@
+@charset "UTF-8";*{padding:0;margin:0}html{font-size:100%;font-family:'Comfortaa',cursive;font-weight:300}body{font-family:'Comfortaa',cursive;font-weight:300;font-size:16px}p{color:#4d4d4d;margin-bottom:0;font-family:'Comfortaa',cursive;font-weight:300}ul{padding-left:0;margin-bottom:0}img{border:none}ul
+li{list-style:none}input,textarea{outline:none}a{text-decoration:none;color:#4d4d4d}a:hover,a:focus,a:active,a:visited{text-decoration:none;outline:none;color:#4d4d4d}.btn,.btn:hover,.btn:focus,.btn:active,.btn:visited{color:#fff !important;text-decoration:none !important}.btn-default,.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default:visited{color:#565656 !important;text-decoration:none !important}h1,h2,h3,h4,h5,h6{font-family:'Comfortaa',cursive;font-weight:400;text-transform:uppercase;color:#4d4d4d;margin:0}section{font-size:1rem}.top-wrap{background-color:#e6eff2;font-family:'Ubuntu',sans-serif;font-weight:300}.top-wrap__lang{margin-right:50px;float:left}.top-wrap__menu{float:left;padding:13px
+0}.top-wrap__menu nav ul
+li{display:inline-block;padding-right:24px}.top-wrap__menu nav ul li:last-child{padding-right:0}.top-wrap__menu nav ul li a:hover{text-decoration:underline}.top-wrap__entrance{padding-top:11px;float:right}.top-wrap__entrance
+a{display:inline-block;text-transform:uppercase;font-size:0.875em}.top-wrap__entrance a:hover{text-decoration:underline}.top-wrap__entrance a+a:before{content:"/";display:inline-block;margin:0
+5px}.top-wrap__socials{float:right;padding-top:8px;margin-right:60px}.top-wrap__socials
+li{display:inline-block;margin-right:14px}.top-wrap__socials li
+a{width:24px;height:24px;line-height:24px;display:inline-block;background-color:#549cd1;text-align:center;border-radius:50%}.top-wrap__socials li a
+i{color:#fff;font-size:1em}.top-wrap__socials li:last-child{margin-right:0}.top-wrap .top-wrap__lang{padding:8px
+11px 12px 23px;background-color:#2489c9}.top-wrap .jq-selectbox__select-text{text-transform:uppercase}.top-wrap .jq-selectbox
+li{font-family:'Comfortaa',cursive;font-weight:300;text-transform:uppercase}.jq-selectbox__select{border:transparent;background:#2489c9;box-shadow:none;text-shadow:none;border-radius:5px}.jq-selectbox__select:hover{background:#2489c9}.jq-selectbox.focused .jq-selectbox__select{border:none}.jq-selectbox__select:active{box-shadow:none}.jq-selectbox__trigger,.jq-selectbox__trigger-arrow{border:none}.jq-selectbox__select:after{font-family:FontAwesome;content:"\f0d7";color:#fff;font-size:1em;position:absolute;top:1px;right:25px;width:0;height:0}.jq-selectbox__dropdown{border-radius:0}.jq-selectbox
+li{color:#2489c9;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;font-family:'Ubuntu',sans-serif;font-weight:300}.jq-selectbox li.selected,
+.jq-selectbox li:hover{background-color:#2489c9;color:#fff}.jq-selectbox__select-text{text-shadow:none;color:#fff;width:30px;font-family:'Ubuntu',sans-serif;font-weight:300}.top-main-wrap{padding:32px
+0}.top-main-wrap__contacts{padding-top:28px}.top-main-wrap__contacts ul
+li{padding-bottom:21px}.top-main-wrap__contacts ul li:last-child{padding-bottom:0}.top-main-wrap__contacts ul li
+a{font-size:1.125em;font-family:'Ubuntu',sans-serif;font-weight:300;color:#2489c9}.top-main-wrap__logo
+img{max-width:100%;height:auto;display:block}.top-main-wrap__cart{text-align:right}.top-main-wrap__cart
+.cart{margin-bottom:46px}.top-main-wrap__cart
+button{border:none;background:none;outline:none}.top-main-wrap__cart .cart-icon{background:url("//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/cart.png") no-repeat;display:inline-block;height:40px;width:47px;color:#fff;padding-top:17px}.top-main-wrap__cart .total-sum-val{padding-left:20px;color:#2489c9;font-family:'Comfortaa',cursive;font-weight:700;font-size:1.125em}.top-main-wrap__cart .total-sum-cur{font-size:0.75em;padding-left:6px;font-weight:bold;color:#2489c9}.top-main-wrap__cart .search .input-group{width:auto;border-bottom:1px solid #2489c9}.top-main-wrap__cart .search #custom-search-input{border-radius:0;background-color:#fff;max-width:187px;float:right;border-bottom:1px solid #2489c9;padding-bottom:3px;padding-left:5px}.top-main-wrap__cart .search #custom-search-input
+input{border:none;box-shadow:none;height:23px;width:158px;font-size:0.875em}.top-main-wrap__cart .search #custom-search-input input::-webkit-input-placeholder{text-transform:uppercase;color:#a9c9e5;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.75em}.top-main-wrap__cart .search #custom-search-input input:-moz-placeholder{text-transform:uppercase;color:#a9c9e5;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.75em}.top-main-wrap__cart .search #custom-search-input input::-moz-placeholder{text-transform:uppercase;color:#a9c9e5;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.75em}.top-main-wrap__cart .search #custom-search-input input:-ms-input-placeholder{text-transform:uppercase;color:#a9c9e5;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.75em}.top-main-wrap__cart .search #custom-search-input
+button{background:none;box-shadow:none;border:0;padding:0;border-left:none}.top-main-wrap__cart .search #custom-search-input button
+i{color:#2489c9;font-size:1.125em}.top-main-wrap__cart .search #custom-search-input button:hover{border:0;box-shadow:none;border-left:none}.top-main-wrap__cart .search #custom-search-input button:hover,
+.top-main-wrap__cart .search #custom-search-input button:focus{outline:none}#input-search{border:0;border-bottom:1px solid #2489c9;padding-bottom:3px;padding:5px;display:block;width:100%}.main-menu-container{max-width:942px;margin:0
+auto;text-align:center;padding-bottom:10px}.main-menu ul
+li{padding-right:55px;display:inline-block}.main-menu ul li:last-child{padding-right:0}.main-menu ul li
+a{font-size:1.25em;text-transform:uppercase;color:#2489c9}.delivery{padding:9px
+0;background-color:#e6eff2;text-align:center;text-transform:uppercase;font-size:0.875em;font-family:'Comfortaa',cursive;font-weight:400;letter-spacing:2px}.banners-carousel.owl-carousel .owl-nav .owl-next,
+.banners-carousel.owl-carousel .owl-nav .owl-prev{position:absolute;display:block;top:30%;-ms-transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border-radius:0}.banners-carousel.owl-carousel .owl-nav .owl-prev{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/carousel-prev.png) no-repeat;width:54px;height:204px;left:7%}.banners-carousel.owl-carousel .owl-nav .owl-next{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/carousel-next.png) no-repeat;width:54px;height:204px;right:3%}.top-goods-section{padding-top:56px;padding-bottom:50px}.top-goods-section .section-title{margin-bottom:60px}.product-title,.product-price{text-align:center}.product-title{padding:10px
+0;position:relative;overflow:hidden;height:48px}.product-title
+a{color:#2489c9;font-size:0.875em}.product-price>div{display:inline-block}.product-price>div+div{margin-left:5px}.product-price__val{font-size:1.25em;font-family:'Comfortaa',cursive;font-weight:700;padding-right:6px}.product-price__cur{font-family:'Comfortaa',cursive;font-weight:400;font-size:0.875em}.old-price{text-decoration:line-through;color:#565656}.old-price .product-price__val{font-size:1em}.section-title{display:block;text-align:center;font-size:1.875em;letter-spacing:2px}.top-carousel.owl-carousel .owl-nav{display:block !important}.top-carousel.owl-carousel .owl-nav.disabled{display:none !important}.top-carousel.owl-carousel .owl-nav .owl-next,
+.top-carousel.owl-carousel .owl-nav .owl-prev{position:absolute;display:block;top:-92px;-ms-transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);border-radius:0}.top-carousel.owl-carousel .owl-nav .owl-prev{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/carousel-prev-small.png) no-repeat;width:50px;height:32px;left:2%}.top-carousel.owl-carousel .owl-nav .owl-next{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/carousel-next-small.png) no-repeat;width:50px;height:32px;right:-2%}.action-section{position:relative}.action-section .img-wrap
+img{width:100%}.img-wrap
+img{max-width:100%;height:auto;display:block}.link-wrap{position:absolute;top:21px;width:100%}.link-wrap .view-all-actions{padding:7px
+45px;color:#fff;display:inline-block;text-align:center;background-color:#2489c9}.link-wrap .view-all-actions span:first-child{display:block;font-size:0.75em}.link-wrap .view-all-actions span:last-child{text-transform:uppercase;font-size:1.25em}.collection-section{padding-top:84px;padding-bottom:18px}.collection-section .section-title{margin-bottom:40px}.collection-section .img-wrap{position:relative;overflow:hidden}.collection-section .img-wrap
+img{-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.collection-section .img-wrap img:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.collection-section .collection-name{position:absolute;bottom:20px;padding:13px
+0;color:#fff;text-transform:uppercase;font-size:1.125em;background-color:rgba(36,137,201,0.7);width:76%;padding-left:80px}.about-section{padding:30px
+0 34px;background:#e6eff2;text-align:center}.about-section .section-title{margin-bottom:28px}.about-section .about-container{max-width:914px;margin:0
+auto}.about-section .advantages-wrap{max-width:655px;margin:0
+auto}.about-section .about-text{font-family:'Ubuntu',sans-serif;font-weight:300;color:#4d4d4d;margin-bottom:26px}.about-section .advantages-wrap{font-size:0}.about-section .advantages-item{font-size:1rem;display:inline-block;vertical-align:top;width:30.33%;margin-right:3%}.about-section .advantages-item:last-child{margin-right:0}.about-section .advantages-item .img-adv{min-height:63px;margin-bottom:22px}.about-section .advantages-item
+h3{text-transform:none;color:#eb8828;font-family:'Comfortaa',cursive;font-weight:700;font-size:1em}.news-section{padding:76px
+0 28px}.news-section .section-title{margin-bottom:40px}.all-news-block{text-align:center;padding-top:40px}.all-news-block
+a{color:#2489c9;text-transform:uppercase;font-size:0.875em;font-family:'Comfortaa',cursive;font-weight:400}.all-news-block a:hover{text-decoration:underline}.news-item .img-wrap{position:relative;overflow:hidden}.news-item .img-wrap
+img{width:100%;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.news-item .img-wrap img:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.news-item__description{background-color:rgba(36, 137, 201, 0.7);padding:17px
+20px 10px;position:absolute;bottom:0;left:0;right:0;height:40%}.news-item .news-date{margin-bottom:15px;color:#fff;font-size:0.75em;font-family:'Ubuntu',sans-serif;font-weight:300}.news-item .news-name{font-size:0.875em;font-family:'Comfortaa',cursive;font-weight:300}.news-item .news-name
+a{color:#fff}.subscribe-section{background-color:#e6eff2;padding:20px
+0}.subsribe-container{max-width:930px;margin:0
+auto}.form-inline .email-subscribe{width:380px;height:40px;background:transparent;border:none;border-bottom:1px solid #2489c9;box-shadow:none;border-radius:0;margin-right:18px;font-size:1rem;padding-left:19px;font-family:'Ubuntu',sans-serif;font-weight:300}.email-subscribe::-webkit-input-placeholder{color:#a4a6a6;opacity:1;font-size:1em;font-family:'Ubuntu',sans-serif;font-weight:300}.email-subscribe:-moz-placeholder{color:#a4a6a6;opacity:1;font-size:1em;font-family:'Ubuntu',sans-serif;font-weight:300}.email-subscribe::-moz-placeholder{color:#a4a6a6;opacity:1;font-size:1em;font-family:'Ubuntu',sans-serif;font-weight:300}.email-subscribe:-ms-input-placeholder{color:#a4a6a6;opacity:1;font-size:1em;font-family:'Ubuntu',sans-serif;font-weight:300}.subscribe-button{padding:0
+32px;height:40px;background-color:#2489c9;color:#fff;font-family:'Comfortaa',cursive;font-weight:400;font-size:0.875em;text-transform:uppercase;border:none;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;display:inline-block;border-radius:5px}input[type="email"]:focus{border-bottom:1px solid #2489c9}.subscribe-label{color:#696a6b;text-transform:uppercase;padding-right:33px}.visit-section{background-image:url("//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/bottom-background.png");background-position:center center;background-repeat:no-repeat;height:522px;background-attachment:fixed;width:100%;background-size:cover}.visit-container{max-width:457px;margin:0
+auto;text-align:center;padding-top:63px}.visit-container .img-wrap{margin-bottom:54px}.visit-container .img-wrap
+img{margin:0
+auto}.visit-container .visit-title{font-size:2.125em;color:#fff;margin-bottom:15px;display:block}.visit-container .visit-address{text-transform:uppercase;color:#2489c9;font-size:0.875em;margin-bottom:60px}.visit-container .visit-question{color:#fff;font-size:1.5em;margin-bottom:23px}.visit-container .question-link{padding:24px
+90px;background-color:rgba(36,137,201,0.7);color:#fff;text-transform:uppercase;border-radius:5px;display:inline-block}.footer-wrap{background-color:#4d4d4d;padding:50px
+0 28px}.footer-wrap__company,.footer-wrap__links,.footer-wrap__socials,.footer-wrap__catalog,.footer-wrap__support{float:left;max-width:228px}.footer-wrap__company h4, .footer-wrap__links h4, .footer-wrap__socials h4, .footer-wrap__catalog h4, .footer-wrap__support
+h4{margin-bottom:30px;color:#fff}.footer-wrap__company nav ul li, .footer-wrap__links nav ul li, .footer-wrap__socials nav ul li, .footer-wrap__catalog nav ul li, .footer-wrap__support nav ul
+li{padding-bottom:20px}.footer-wrap__company nav ul li:last-child, .footer-wrap__links nav ul li:last-child, .footer-wrap__socials nav ul li:last-child, .footer-wrap__catalog nav ul li:last-child, .footer-wrap__support nav ul li:last-child{padding-bottom:0}.footer-wrap__company nav ul li a, .footer-wrap__links nav ul li a, .footer-wrap__socials nav ul li a, .footer-wrap__catalog nav ul li a, .footer-wrap__support nav ul li
+a{color:#fff;font-size:0.875em}.footer-wrap__company{margin-right:45px}.footer-wrap__catalog{margin-right:85px}.footer-wrap__support{margin-right:73px}.footer-wrap__links{margin-right:60px}.footer-wrap__socials
+ul{margin-bottom:44px}.footer-wrap__socials ul
+li{display:inline-block;margin-right:14px}.footer-wrap__socials ul li
+a{width:37px;height:37px;line-height:37px;display:inline-block;background-color:#fff;text-align:center;border-radius:50%;border:2px
+solid transparent;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.footer-wrap__socials ul li a
+i{color:#4d4d4d;font-size:1.25em}.footer-wrap__socials ul li a:hover{border:2px
+solid #fff;background-color:#4d4d4d}.footer-wrap__socials ul li a:hover
+i{color:#fff}.footer-wrap__socials ul li:last-child{margin-right:0}.copyright{text-align:center;font-size:0.875em;padding:13px
+0;color:#5a5a5a}.copyright span:first-child{text-transform:uppercase}.copyright span:last-child{font-family:'Ubuntu',sans-serif;font-weight:300}.breadcrumbs{padding-top:42px}.breadcrumbs ul
+li{display:inline-block;font-family:'Ubuntu',sans-serif;font-weight:300}.breadcrumbs ul li a, .breadcrumbs ul li
+span{color:#2489c9;font-size:0.875em}.breadcrumbs ul li a:after{content:">";display:inline-block;color:#4d4d4d;margin:0
+10px}.breadcrumbs ul li a:hover{text-decoration:underline}.item-main{margin-bottom:48px}.item-main
+h5{margin-bottom:10px}.item-main
+p{margin-bottom:20px}.item-main p
+a{color:#2489c9}.item-main p a:hover{color:#2489c9;text-decoration:underline}.item-main > ul
+li{list-style:disc;margin-bottom:15px;margin-left:25px}.buttons
+a{color:#2489c9}.buttons a:hover{color:#2489c9;text-decoration:underline}.bx-wrapper{margin-bottom:0;box-shadow:none;border:none}.bx-wrapper
+img{width:100%}#bx-pager{float:left;width:18%}#bx-pager
+a{display:block;margin-bottom:20px}#bx-pager a
+img{border:1px
+solid transparent;opacity: .7;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}#bx-pager a.active img, #bx-pager a:hover
+img{border:1px
+solid #2489c9;opacity:1.0}#bx-pager a:last-child{margin-bottom:0}.bx-wrapper{float:left;width:82%}.item-tab-list{margin-bottom:36px}.item-tab-list
+li{display:inline-block;text-align:center;margin:0
+20px 0 0;line-height:54px;position:relative;font-family:'Ubuntu',sans-serif;font-weight:300;border:1px
+solid #2489c9;border-radius:4px;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.item-tab-list li
+a{color:#2489c9;padding:24px
+20px;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.item-tab-list li:hover, .item-tab-list
+li.active{background-color:#2489c9}.item-tab-list li:hover a, .item-tab-list li.active
+a{color:#fff}.item-tab-content__list{display:none}.item-tab-content__list.active{display:block}.item-characteristics{padding-left:10px}.item-availability{margin-bottom:32px}.item-availability
+div{width:50%;float:left;font-family:'Ubuntu',sans-serif;font-weight:300}.item-availability div .share-text{text-transform:uppercase;color:#999;margin-bottom:16px;display:block}.item-availability div .socials-list
+li{display:inline-block;margin-right:14px}.item-availability div .socials-list li
+a{width:24px;height:24px;line-height:24px;display:inline-block;background-color:#2489c9;text-align:center;border-radius:50%}.item-availability div .socials-list li a
+i{color:#fff;font-size:1em}.item-availability div .socials-list li:last-child{margin-right:0}.item-availability div .socials-list
+div{width:auto}.item-availability .availability-list{text-transform:uppercase;color:#999}.item-availability .availability-list
+li{padding-bottom:20px}.item-availability .availability-list li span:first-child{padding-right:43px}.item-availability .availability-list li:last-child{padding-bottom:0}.item-availability .availability-list
+.sklad{color:#2489c9}.item-models h4, .item-size h4, .item-colors
+h4{margin-bottom:13px;display:block;font-family:'Ubuntu',sans-serif;font-weight:300;font-weight:bold;font-size:0.875em}.item-models{margin-bottom:34px}.item-models
+.radio{display:inline-block;text-align:center;position:relative;font-family:'Ubuntu',sans-serif;font-weight:300;border:1px
+solid #2489c9;border-radius:4px;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.item-models .radio+.radio{margin-left:20px}.item-models .radio
+label{color:#2489c9;padding:12px
+20px;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.item-models .radio
+label.active{background:#2489c9;color:#fff}.item-models .radio
+input{display:none}.item-models .сolors-choosing
+.radio{border:0}.item-models .сolors-choosing .radio
+label{border:3px
+solid transparent}.item-models .сolors-choosing .radio
+label.active{border:3px
+solid #383838}.item-models .сolors-choosing .radio label[data-name='Синий']{background-color:#2489c9}.item-models .сolors-choosing .radio label[data-name='Зеленый']{background-color:#24c928}.item-models .сolors-choosing .radio label[data-name='Коричневый']{background-color:#c98124}.item-models .сolors-choosing .radio label[data-name='Розовый']{background-color:#c924b0}.item-size{margin-bottom:30px}.item-size
+ul{display:inline-block;vertical-align:top;font-family:'Ubuntu',sans-serif;font-weight:300}.size-table{padding-top:10px;padding-right:28px;display:inline-block}.size-table
+li{font-size:0.675em;text-transform:uppercase;padding-bottom:2px;color:#666}.size-table li:last-child{padding-bottom:0}.size-list{display:inline-block}.size-list label
+span{display:block;line-height:1}.blue-color{background-color:#2489c9}.pink-color{background-color:#c924b0}.green-color{background-color:#24c928}.brown-color{background-color:#c98124}.item-title{display:block;margin-top:30px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #979797}.item-title
+h1{margin:0}.price-row{margin-bottom:33px;font-family:'Ubuntu',sans-serif;font-weight:300}.price-row>div{display:inline-block}.price-real{font-size:0.875rem;color:#666;text-transform:uppercase;padding-right:90px}.price-cur{font-size:1.125rem;text-transform:none}.price-val{font-size:2.625rem;color:#4d4d4d}.price-real
+sup{font-size:1.875rem}.price-old{font-size:1rem;color:#666}.price-old
+span{text-decoration:line-through}.price-text{padding-right:37px;font-family:'Ubuntu',sans-serif;font-weight:300;font-weight:bold;color:#4d4d4d}.add-to-cart{margin-bottom:42px}.add-to-cart
+div{display:inline-block}.add-to-cart
+button{border:none;color:#fff;background-color:rgba(36, 137, 201, 0.9);border-radius:4px;display:inline-block;padding:24px
+52px;text-transform:uppercase;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;margin-right:42px;font-family:'Ubuntu',sans-serif;font-weight:300}.add-to-cart button:hover,
+.add-to-cart button:active,
+.add-to-cart button:focus{background-color:#2489c9;outline:none}.buy-by-click{font-size:1.125rem;display:inline-block;color:#2489c9;font-family:'Ubuntu',sans-serif;font-weight:300;background:url("//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/one-click-buy.png") no-repeat;padding-left:38px;height:29px;width:auto}.buy-by-click:hover,.buy-by-click:focus,.buy-by-click:active{color:#2489c9}.delivery-block{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/delivery-marker.png) no-repeat;width:170px;padding-left:36px;height:30px;margin-right:100px}.buy-block{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/payment.png) no-repeat;width:220px;height:31px;padding-left:57px}.delivery-block,.buy-block{font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.875rem;text-transform:uppercase;color:#666;display:inline-block}.reg-font{color:#666;font-weight:bold}.item-add-info{font-family:'Ubuntu',sans-serif;font-weight:300;padding-bottom:45px;border-bottom:1px solid #b3b3b3}.item-add-info .item-description__wrap,
+.item-add-info .item-characteristics__wrap{border-top:1px solid #b3b3b3}.item-add-info .item-description__wrap h3,
+.item-add-info .item-characteristics__wrap
+h3{padding-bottom:30px;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1.25em;color:#666}.item-add-info .item-description__wrap .item-characteristics__images ul li,
+.item-add-info .item-characteristics__wrap .item-characteristics__images ul
+li{display:inline-block;padding-right:30px}.item-add-info .item-description__wrap .item-characteristics__images ul li:last-child,
+.item-add-info .item-characteristics__wrap .item-characteristics__images ul li:last-child{padding-right:0}.item-add-info .item-description__wrap{padding-top:35px}.item-add-info .item-description__wrap
+h3{padding-bottom:26px;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1.25em;color:#666}.item-add-info .item-description__wrap
+p{font-family:'Ubuntu',sans-serif;font-weight:300}.item-add-info .item-characteristics{padding-left:10px}.item-add-info .item-characteristics__wrap{padding-top:15px}.item-add-info .item-description{padding-right:10px}.item-characteristics__table{margin-bottom:30px}.item-table-row{display:table-row}.item-table-cell{display:table-cell;vertical-align:top;padding-bottom:17px}.item-table-cell:first-child{padding-right:28px;font-weight:bold;color:#4d4d4d}.left-pos{float:left}.right-pos{float:right}.sorting-block{margin-bottom:32px}.category-row .category-item{margin-bottom:30px}.price-diap-text{padding-bottom:20px;font-size:1rem}.amount-range{border:none;font-weight:bold;color:#00aaa1;font-size:1.125rem}.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active{outline:none;background-color:#fff;border-radius:50%;border:none}.ui-slider .ui-slider-range{background-color:#00aaa1}.ui-slider-horizontal .ui-slider-handle{margin-left:-.6em}.ui-slider-horizontal .ui-slider-handle:hover{cursor:pointer}.ui-slider .ui-slider-handle{width:24px;height:24px;background-color:#2489c9}.ui-slider-horizontal{height:2px;background-color:#b2b2b2}.formCost{margin-bottom:28px}.formCost
+input{font-family:'Ubuntu',sans-serif;font-weight:300;width:120px;height:28px;font-size:1.125em;float:left;border-radius:4px;border:1px
+solid #ccc;background-color:#f2f2f2;color:#666;text-align:center}.formCost input:first-child{margin-right:30px}.catalog-checkbox{display:none}.catalog-checkbox+label:before{display:inline-block;cursor:pointer;margin-right:23px;content:"";background-image:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/checkbox_06.png);background-repeat:no-repeat;width:30px;height:30px;margin-bottom:10px;position:relative}.catalog-checkbox:checked+label:before{background-image:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/selected-chckbx_03.png);background-repeat:no-repeat;width:30px;height:30px}.color-checkbox{display:none}.color-checkbox+label:before{display:inline-block;cursor:pointer;margin-right:23px;content:"";width:30px;height:30px;margin-bottom:10px}.brown-checkbox+label:before,.brown-checkbox:checked+label:before{background-color:#855848}.brown-checkbox:checked+label:before{border:3px
+solid #fff;outline:1px
+solid #855848}.blue-checkbox+label:before,.blue-checkbox:checked+label:before{background-color:#3e84ae}.blue-checkbox:checked+label:before{border:3px
+solid #fff;outline:1px
+solid #3e84ae}.red-checkbox+label:before,.red-checkbox:checked+label:before{background-color:#ac404e}.red-checkbox:checked+label:before{border:3px
+solid #fff;outline:1px
+solid #ac404e}.yellow-checkbox+label:before,.yellow-checkbox:checked+label:before{background-color:#fac567}.yellow-checkbox:checked+label:before{border:3px
+solid #fff;outline:1px
+solid #fac567}.green-checkbox+label:before,.green-checkbox:checked+label:before{background-color:#00aaa1}.green-checkbox:checked+label:before{border:3px
+solid #fff;outline:1px
+solid #00aaa1}.color-checkbox:checked+label:before{width:30px;height:30px}.catalog-checkbox+label,.color-checkbox+label{font-size:0.875rem;color:#808080;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;font-family:'Ubuntu',sans-serif;font-weight:300}.catalog-checkbox + label span,
+.color-checkbox + label
+span{padding-top:1px;font-size:1rem;font-weight:normal}.open-accord{width:23px;height:23px;display:inline-block;background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/plus_03.png) no-repeat;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.close-accord{width:23px;height:23px;display:inline-block;background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/plus_03.png) no-repeat;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;-ms-transform:rotate(135deg);-webkit-transform:rotate(135deg);transform:rotate(135deg)}.translate-accord{-ms-transform:rotate(135deg);-webkit-transform:rotate(135deg);transform:rotate(135deg)}.sidebar-block__head{overflow:hidden;padding:20px
+15px 20px 0;border-top:1px solid #b3b3b3}.sidebar-block__head:hover{cursor:pointer}.catalog-block-heading{font-size:1.125em;color:#666;padding-bottom:20px;font-family:'Ubuntu',sans-serif;font-weight:300}.catalog-categories-list{padding-left:5px}.accordion-inner{padding-bottom:30px;padding-right:20px;font-size:0.875rem}.category-row
+aside{padding-top:65px}.sorting-label{font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.875em;color:#666}.category-section{padding-bottom:100px}.category-section .pagination-wrap{margin-bottom:-150px;padding-bottom:62px}.category-section .col-sm-4 .jq-selectbox{width:100%}.category-row{border-bottom:1px solid #979797;margin-bottom:40px}.pagination-wrap{width:100%;text-align:center}.pagination-wrap nav ul
+li{display:inline-block}.pagination-wrap nav ul li:nth-child(2), .pagination-wrap nav ul li:last-child{margin-left:110px}.pagination-wrap nav ul li
+a{font-size:1.875em;font-family:'Ubuntu',sans-serif;font-weight:300;border-radius:50%;display:inline-block;width:56px;height:56px;line-height:56px}.pagination-wrap nav ul li
+a.active{background-color:#2489c9;color:#fff}.cat-img-wrap{position:relative;display:block;overflow:hidden}.cat-img-wrap
+img{transition:all 0.4s ease-in-out}.cat-img-wrap:hover
+img{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.action-label{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/action.png) no-repeat;width:62px;height:61px;line-height:61px;display:inline-block;position:absolute;left:20px;top:10px;text-align:center;z-index:999}.action-label
+span{display:inline-block;text-transform:uppercase;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.75em;color:#fff;-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.cat-item-row{margin-bottom:38px}.arr-prev,.arr-next{width:27px;height:17px;display:inline-block}.arr-prev{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/arr-prev_11.png) no-repeat}.arr-next{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/arr-next_13.png) no-repeat}.simple-news{font-size:1rem;font-family:'Ubuntu',sans-serif;font-weight:300}.news-main-topic{margin-bottom:43px}.article-title{text-transform:none;font-family:'Ubuntu',sans-serif;font-weight:300}.news-simple-head{margin-bottom:44px}.news-simple-share
+ul{display:inline-block}.news-simple-share
+li{display:inline-block;margin-right:10px}.news-simple-share li
+a{width:26px;height:26px;line-height:26px;display:inline-block;background-color:#549cd1;text-align:center;border-radius:50%}.news-simple-share li a
+i{color:#fff;font-size:1em}.news-simple-share li:last-child{margin-right:0}.share-label{color:#999;text-transform:uppercase;padding-right:58px}.news-simple-wrap{border-bottom:1px solid #969493}.news-simple-wrap
+p{margin-bottom:28px;font-family:'Ubuntu',sans-serif;font-weight:400;font-size:0.875em}.news-simple-wrap .img-box{float:left;position:relative;overflow:hidden}.news-simple-wrap .img-box
+img{max-width:100%;height:auto;display:block;transition:all 0.4s ease-in-out}.news-simple-wrap .img-box:hover
+img{opacity: .8;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.news-simple-wrap
+blockquote{padding:20px
+10px 20px 80px;position:relative;border-left:none;border-top:1px solid #2d2927;border-bottom:1px solid #2d2927;margin-bottom:30px;font-size:1em}.news-simple-wrap blockquote:before{content:"";position:absolute;display:inline-block;top:20px;left:0;background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/quotes.png) no-repeat;width:34px;height:27px}.news-simple-wrap blockquote
+p{font-size:1em;display:block;font-family:'Ubuntu',sans-serif;font-weight:400}.news-simple-wrap blockquote p
+strong{font-size:1em;display:block;margin-top:34px;margin-bottom:0;font-weight:bold}.news-simple-wrap blockquote p:last-child{margin-bottom:0}.news-simple-wrap
+ul{padding-top:18px}.news-simple-wrap ul
+li{font-family:'Ubuntu',sans-serif;font-weight:400;padding-bottom:23px;background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/star.png) no-repeat;padding-left:60px}.img-box{float:left;position:relative;overflow:hidden;padding:0
+20px 40px 0}.img-box
+img{max-width:100%;height:auto;display:block;transition:all 0.4s ease-in-out}.img-box:hover
+img{opacity: .8;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.blog-section
+article{padding-top:20px;margin-bottom:60px}.blog-section article
+h2{font-size:1.625em;font-family:'Ubuntu',sans-serif;font-weight:300;text-transform:none;display:block;margin-bottom:35px}.blog-section article h2 a:hover{text-decoration:underline}.blog-section article
+p{font-family:'Ubuntu',sans-serif;font-weight:300;font-size:0.875em;margin-bottom:15px}.blog-section .news-item{margin-bottom:40px}.blog-section .pagination-wrap{padding-top:40px;padding-bottom:40px}.blog-date{color:#999;margin-bottom:20px;font-family:'Ubuntu',sans-serif;font-weight:400}.contacts-container{max-width:900px;margin:0
+auto;padding:100px
+0 120px}.contact-info{font-family:'Ubuntu',sans-serif;font-weight:400;font-size:1.25em}.contact-info__phones{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/phone-icon.png) no-repeat;padding-left:55px;min-height:42px;width:auto;margin-bottom:40px}.contact-info__address{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/contacts-marker.png) no-repeat;padding-left:45px;min-height:41px;width:auto;margin-bottom:40px}.contact-info__email{background:url(//idexe-online.com.ua/catalog/view/theme/idexe/css/../images/mail-icon.png) no-repeat;padding-left:55px;min-height:30px;width:auto}.contact-form input, .contact-form
+textarea{width:100%}.contact-form
+input{margin-bottom:20px;border-radius:4px;box-shadow:none;border:1px
+solid #4d4d4d;padding:5px
+15px;font-family:'Ubuntu',sans-serif;font-weight:300}.contact-form input[type='email']:focus{border:1px
+solid #4d4d4d}.contact-form
+textarea{border:1px
+solid #4d4d4d;resize:none;padding:15px;border-radius:4px;margin-bottom:35px;font-family:'Ubuntu',sans-serif;font-weight:300}.contact-form .submit-button{text-transform:uppercase;padding:10px
+30px;background-color:rgba(36, 137, 201, 0.8);border:none;outline:none;border-radius:4px;color:#fff;-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.contact-form .submit-button:hover{background-color:#2489c9}.contact-form input::-webkit-input-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form input:-moz-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form input::-moz-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form input:-ms-input-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form textarea::-webkit-input-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form textarea:-moz-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form textarea::-moz-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.contact-form textarea:-ms-input-placeholder{color:#999;font-family:'Ubuntu',sans-serif;font-weight:300;font-size:1em}.goods-img-wrap{overflow:hidden;display:block}.top-carousel.owl-carousel .owl-item
+img{-moz-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out}.top-carousel.owl-carousel .owl-item img:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}#cart>button{box-shadow:none}#cart
+img{max-width:90px}#cart .dropdown-menu{z-index:1001}#cart .dropdown-menu{min-width:100%}@media (max-width: 478px){#cart .dropdown-menu{width:100%}}#cart .dropdown-menu
+table{margin-bottom:10px}#cart .dropdown-menu li>div{min-width:427px;padding:0
+10px}@media (max-width: 478px){#cart .dropdown-menu li>div{min-width:100%}}#cart .dropdown-menu li
+p{margin:20px
+0}.btn-readmore{display:inline-block;background:#2489c9}.btn-readmore:hover{background:#5dacde}
