@@ -7,18 +7,24 @@
 
 html {
   font-size: 100%;
-  font-family: "ComfortaaLight";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
 }
 
 body {
-  font-family: "ComfortaaLight";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
   font-size: 16px;
 }
 
 p {
   color: #4d4d4d;
   margin-bottom: 0;
-  font-family: "ComfortaaLight";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
 }
 
 ul {
@@ -71,7 +77,9 @@ a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ComfortaaRegular";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
   text-transform: uppercase;
   color: #4d4d4d;
   margin: 0;
@@ -88,7 +96,8 @@ section {
 /*  HEADER  */
 .top-wrap {
   background-color: #e6eff2;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   /*  lang select customization  */
 }
 
@@ -176,7 +185,9 @@ section {
 }
 
 .top-wrap .jq-selectbox li {
-  font-family: "ComfortaaLight";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -227,7 +238,8 @@ section {
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .jq-selectbox li.selected,
@@ -240,7 +252,8 @@ section {
   text-shadow: none;
   color: #fff;
   width: 30px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .top-main-wrap {
@@ -261,7 +274,8 @@ section {
 
 .top-main-wrap__contacts ul li a {
   font-size: 1.125em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   color: #2489c9;
 }
 
@@ -297,7 +311,9 @@ section {
 .top-main-wrap__cart .total-sum-val {
   padding-left: 20px;
   color: #2489c9;
-  font-family: "ComfortaaBold";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
   font-size: 1.125em;
 }
 
@@ -334,28 +350,32 @@ section {
 .top-main-wrap__cart .search #custom-search-input input::-webkit-input-placeholder {
   text-transform: uppercase;
   color: #a9c9e5;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.75em;
 }
 
 .top-main-wrap__cart .search #custom-search-input input:-moz-placeholder {
   text-transform: uppercase;
   color: #a9c9e5;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.75em;
 }
 
 .top-main-wrap__cart .search #custom-search-input input::-moz-placeholder {
   text-transform: uppercase;
   color: #a9c9e5;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.75em;
 }
 
 .top-main-wrap__cart .search #custom-search-input input:-ms-input-placeholder {
   text-transform: uppercase;
   color: #a9c9e5;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.75em;
 }
 
@@ -420,7 +440,9 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.875em;
-  font-family: "ComfortaaRegular";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
@@ -486,12 +508,16 @@ section {
 
 .product-price__val {
   font-size: 1.25em;
-  font-family: "ComfortaaBold";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
   padding-right: 6px;
 }
 
 .product-price__cur {
-  font-family: "ComfortaaRegular";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
   font-size: 0.875em;
 }
 
@@ -647,7 +673,8 @@ section {
 }
 
 .about-section .about-text {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   color: #4d4d4d;
   margin-bottom: 26px;
 }
@@ -676,7 +703,9 @@ section {
 .about-section .advantages-item h3 {
   text-transform: none;
   color: #eb8828;
-  font-family: "ComfortaaBold";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
   font-size: 1em;
 }
 
@@ -698,7 +727,9 @@ section {
   color: #2489c9;
   text-transform: uppercase;
   font-size: 0.875em;
-  font-family: "ComfortaaRegular";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
 }
 
 .all-news-block a:hover {
@@ -740,12 +771,15 @@ section {
   margin-bottom: 15px;
   color: #fff;
   font-size: 0.75em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .news-item .news-name {
   font-size: 0.875em;
-  font-family: "ComfortaaLight";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
 }
 
 .news-item .news-name a {
@@ -774,35 +808,40 @@ section {
   margin-right: 18px;
   font-size: 1rem;
   padding-left: 19px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .email-subscribe::-webkit-input-placeholder {
   color: #a4a6a6;
   opacity: 1;
   font-size: 1em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .email-subscribe:-moz-placeholder {
   color: #a4a6a6;
   opacity: 1;
   font-size: 1em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .email-subscribe::-moz-placeholder {
   color: #a4a6a6;
   opacity: 1;
   font-size: 1em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .email-subscribe:-ms-input-placeholder {
   color: #a4a6a6;
   opacity: 1;
   font-size: 1em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .subscribe-button {
@@ -810,7 +849,9 @@ section {
   height: 40px;
   background-color: #2489c9;
   color: #fff;
-  font-family: "ComfortaaRegular";
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
   font-size: 0.875em;
   text-transform: uppercase;
   border: none;
@@ -986,7 +1027,8 @@ input[type="email"]:focus {
 }
 
 .copyright span:last-child {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 /*  ITEM PAGE  */
@@ -996,7 +1038,8 @@ input[type="email"]:focus {
 
 .breadcrumbs ul li {
   display: inline-block;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .breadcrumbs ul li a, .breadcrumbs ul li span {
@@ -1106,7 +1149,8 @@ input[type="email"]:focus {
   margin: 0 20px 0 0;
   line-height: 54px;
   position: relative;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   border: 1px solid #2489c9;
   border-radius: 4px;
   -moz-transition: all 0.4s ease-in-out;
@@ -1151,7 +1195,8 @@ input[type="email"]:focus {
 .item-availability div {
   width: 50%;
   float: left;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .item-availability div .share-text {
@@ -1213,7 +1258,8 @@ input[type="email"]:focus {
 .item-models h4, .item-size h4, .item-colors h4 {
   margin-bottom: 13px;
   display: block;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-weight: bold;
   font-size: 0.875em;
 }
@@ -1226,7 +1272,8 @@ input[type="email"]:focus {
   display: inline-block;
   text-align: center;
   position: relative;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   border: 1px solid #2489c9;
   border-radius: 4px;
   -moz-transition: all 0.4s ease-in-out;
@@ -1292,7 +1339,8 @@ input[type="email"]:focus {
 .item-size ul {
   display: inline-block;
   vertical-align: top;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .size-table {
@@ -1352,7 +1400,8 @@ input[type="email"]:focus {
 /* price  */
 .price-row {
   margin-bottom: 33px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .price-row > div {
@@ -1391,7 +1440,8 @@ input[type="email"]:focus {
 
 .price-text {
   padding-right: 37px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-weight: bold;
   color: #4d4d4d;
 }
@@ -1418,7 +1468,8 @@ input[type="email"]:focus {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   margin-right: 42px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .add-to-cart button:hover,
@@ -1432,7 +1483,8 @@ input[type="email"]:focus {
   font-size: 1.125rem;
   display: inline-block;
   color: #2489c9;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   background: url("../images/one-click-buy.png") no-repeat;
   padding-left: 38px;
   height: 29px;
@@ -1463,7 +1515,8 @@ input[type="email"]:focus {
 
 .delivery-block,
 .buy-block {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.875rem;
   text-transform: uppercase;
   color: #666;
@@ -1476,7 +1529,8 @@ input[type="email"]:focus {
 }
 
 .item-add-info {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   padding-bottom: 45px;
   border-bottom: 1px solid #b3b3b3;
 }
@@ -1489,7 +1543,8 @@ input[type="email"]:focus {
 .item-add-info .item-description__wrap h3,
 .item-add-info .item-characteristics__wrap h3 {
   padding-bottom: 30px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1.25em;
   color: #666;
 }
@@ -1511,13 +1566,15 @@ input[type="email"]:focus {
 
 .item-add-info .item-description__wrap h3 {
   padding-bottom: 26px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1.25em;
   color: #666;
 }
 
 .item-add-info .item-description__wrap p {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .item-add-info .item-characteristics {
@@ -1630,7 +1687,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .formCost input {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   width: 120px;
   height: 28px;
   font-size: 1.125em;
@@ -1750,7 +1808,8 @@ html .ui-button.ui-state-disabled:active {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .catalog-checkbox + label span,
@@ -1806,7 +1865,8 @@ html .ui-button.ui-state-disabled:active {
   font-size: 1.125em;
   color: #666;
   padding-bottom: 20px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .catalog-categories-list {
@@ -1824,7 +1884,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .sorting-label {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.875em;
   color: #666;
 }
@@ -1862,7 +1923,8 @@ html .ui-button.ui-state-disabled:active {
 
 .pagination-wrap nav ul li a {
   font-size: 1.875em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   border-radius: 50%;
   display: inline-block;
   width: 56px;
@@ -1907,7 +1969,8 @@ html .ui-button.ui-state-disabled:active {
 .action-label span {
   display: inline-block;
   text-transform: uppercase;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.75em;
   color: #fff;
   -ms-transform: rotate(-45deg);
@@ -1937,7 +2000,8 @@ html .ui-button.ui-state-disabled:active {
 /*  NEWS PAGE  */
 .simple-news {
   font-size: 1rem;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .news-main-topic {
@@ -1946,7 +2010,8 @@ html .ui-button.ui-state-disabled:active {
 
 .article-title {
   text-transform: none;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .news-simple-head {
@@ -1993,7 +2058,8 @@ html .ui-button.ui-state-disabled:active {
 
 .news-simple-wrap p {
   margin-bottom: 28px;
-  font-family: "UbuntuRegular";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 0.875em;
 }
 
@@ -2041,7 +2107,8 @@ html .ui-button.ui-state-disabled:active {
 .news-simple-wrap blockquote p {
   font-size: 1em;
   display: block;
-  font-family: "UbuntuRegular";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 
 .news-simple-wrap blockquote p strong {
@@ -2061,7 +2128,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .news-simple-wrap ul li {
-  font-family: "UbuntuRegular";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   padding-bottom: 23px;
   background: url(../images/star.png) no-repeat;
   padding-left: 60px;
@@ -2096,7 +2164,8 @@ html .ui-button.ui-state-disabled:active {
 
 .blog-section article h2 {
   font-size: 1.625em;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   text-transform: none;
   display: block;
   margin-bottom: 35px;
@@ -2107,7 +2176,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .blog-section article p {
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.875em;
   margin-bottom: 15px;
 }
@@ -2124,7 +2194,8 @@ html .ui-button.ui-state-disabled:active {
 .blog-date {
   color: #999;
   margin-bottom: 20px;
-  font-family: "UbuntuRegular";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
 
 /* CONTACTS PAGE */
@@ -2135,7 +2206,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .contact-info {
-  font-family: "UbuntuRegular";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 1.25em;
 }
 
@@ -2172,7 +2244,8 @@ html .ui-button.ui-state-disabled:active {
   box-shadow: none;
   border: 1px solid #4d4d4d;
   padding: 5px 15px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .contact-form input[type='email']:focus {
@@ -2185,7 +2258,8 @@ html .ui-button.ui-state-disabled:active {
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 35px;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
 }
 
 .contact-form .submit-button {
@@ -2208,49 +2282,57 @@ html .ui-button.ui-state-disabled:active {
 
 .contact-form input::-webkit-input-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form input:-moz-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form input::-moz-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form input:-ms-input-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form textarea::-webkit-input-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form textarea:-moz-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form textarea::-moz-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 
 .contact-form textarea:-ms-input-placeholder {
   color: #999;
-  font-family: "UbuntuLight";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 1em;
 }
 

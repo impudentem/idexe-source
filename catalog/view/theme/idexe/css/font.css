@@ -1,6 +1,6 @@
 /*  custom fonts  */
 
-@font-face {
+/*@font-face {
     font-family: "ComfortaaRegular";
     src: url("../fonts/Comfortaa/ComfortaaRegular.eot");
     src: url("../fonts/Comfortaa/ComfortaaRegular.eot?#iefix")format("embedded-opentype"),
@@ -28,11 +28,11 @@
     url("../fonts/Comfortaa/ComfortaaBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-}
+}*/
 
 /* font-family: "UbuntuLight"; */
 
-@font-face {
+/*@font-face {
     font-family: "UbuntuLight";
     src: url("../fonts/Ubuntu/UbuntuLight.eot");
     src: url("../fonts/Ubuntu/UbuntuLight.eot?#iefix")format("embedded-opentype"),
@@ -40,10 +40,10 @@
     url("../fonts/Ubuntu/UbuntuLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-}
+}*/
 
 /* font-family: "UbuntuRegular"; */
-@font-face {
+/*@font-face {
     font-family: "UbuntuRegular";
     src: url("../fonts/Ubuntu/UbuntuRegular.eot");
     src: url("../fonts/Ubuntu/UbuntuRegular.eot?#iefix")format("embedded-opentype"),
@@ -51,4 +51,6 @@
     url("../fonts/Ubuntu/UbuntuRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
-}
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Ubuntu:300,400&subset=cyrillic');
