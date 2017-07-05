@@ -23,13 +23,17 @@ if ($server_host == "localhost") {
 } else {
   // HTTP
   define('HTTP_SERVER', 'http://idexe-online.com.ua/');
+  define('HTTP_IMAGE', 'http://idexe-online.com.ua/image/');
+  define('HTTP_ADMIN', 'http://idexe-online.com.ua/admin/');
 
   // HTTPS
   define('HTTPS_SERVER', 'http://idexe-online.com.ua/');
+  define('HTTPS_IMAGE', 'http://idexe-online.com.ua/image/');
 
   // DIR
   define('DIR_APPLICATION', '/home/idexeonl/idexe-online.com.ua/www/catalog/');
   define('DIR_SYSTEM', '/home/idexeonl/idexe-online.com.ua/www/system/');
+  define('DIR_DATABASE', '/home/idexeonl/idexe-online.com.ua/www/system/database/');
   define('DIR_IMAGE', '/home/idexeonl/idexe-online.com.ua/www/image/');
   define('DIR_LANGUAGE', '/home/idexeonl/idexe-online.com.ua/www/catalog/language/');
   define('DIR_TEMPLATE', '/home/idexeonl/idexe-online.com.ua/www/catalog/view/theme/');
