@@ -21,6 +21,14 @@ class ModelDesignLayout extends Model {
           return array_merge($all_layouts_query->rows, $query->rows);
         }
       
+
+        $all_layouts_id = $this->model_design_layout->getLayout('*');
+        if ($all_layouts_id) {
+          $all_layouts_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$all_layouts_id . "' AND position = '" . $this->db->escape($position) . "' ORDER BY sort_order");
+
+          return array_merge($all_layouts_query->rows, $query->rows);
+        }
+      
 		return $query->rows;
 	}
 }

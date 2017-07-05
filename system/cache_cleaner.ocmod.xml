@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Cache Cleaner for OpenCart 2.3.0.x</name>
+	<code>FX-C-Clean2k3</code>
+	<version>3.0</version>
+	<author>Fido-X</author>
+	<link>http://www.fido-x.net</link>
+
+	<!-- FOR MORE LANGUAGES, COPY THIS SINGLE <file> BLOCK AND CHANGE "en-gb" TO YOUR LANGUAGE -->
+	<file path="admin/language/en-gb/common/column_left.php">
+		<operation>
+			<search limit="1"><![CDATA[$_['text_log']]]></search>
+			<add position="before"><![CDATA[$_['text_cache_cleaner']               = 'Cache Cleaner';]]></add>
+		</operation>
+	</file>
+	<!-- end LANGUAGE insert -->
+
+	<file path="admin/controller/common/column_left.php">
+		<operation>
+			<search limit="1"><![CDATA[if ($tool) {]]></search>
+			<add position="before"><![CDATA[			if ($this->user->hasPermission('access', 'tool/cache_cleaner')) {
+				$tool[] = array(
+					'name'	   => $this->language->get('text_cache_cleaner'),
+					'href'     => $this->url->link('tool/cache_cleaner', 'token=' . $this->session->data['token'], true),
+					'children' => array()
+				);
+			}
+]]></add>
+		</operation>
+	</file>
+</modification>

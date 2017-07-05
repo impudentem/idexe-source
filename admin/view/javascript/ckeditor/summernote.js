@@ -1,0 +1,1 @@
+/Users/impudentem/Sites/sites/idexe-source/admin/view/javascript/ckeditor/ckeditor.js

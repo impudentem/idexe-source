@@ -262,7 +262,6 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()
 				);
 			}
-			/*
 			if ($this->user->hasPermission('access', 'design/menu')) {
 				$design[] = array(
 					'name'	   => $this->language->get('text_menu'),
@@ -270,8 +269,6 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()
 				);
 			}
-			*/
-			/*
 			if ($this->user->hasPermission('access', 'design/theme')) {
 				$design[] = array(
 					'name'	   => $this->language->get('text_theme'),
@@ -287,7 +284,6 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()
 				);
 			}
-			*/
 			if ($this->user->hasPermission('access', 'design/banner')) {
 				$design[] = array(
 					'name'	   => $this->language->get('text_banner'),
@@ -701,21 +697,18 @@ class ControllerCommonColumnLeft extends Controller {
 				);
 			}
 
-
-				$this->load->config('isenselabs/codemanager');
-				$this->language->load($this->config->get('codemanager_path'));
-				if ($this->user->hasPermission('access', $this->config->get('codemanager_path'))) {
-				$tool[] = array(
-					'name'	   => $this->language->get('menu_title'),
-					'href'     => $this->url->link($this->config->get('codemanager_path'), 'token=' . $this->session->data['token'], true),
-					'children' => array()		
-				);
-			}
-			
 			if ($this->user->hasPermission('access', 'tool/log')) {
 				$tool[] = array(
 					'name'	   => $this->language->get('text_log'),
 					'href'     => $this->url->link('tool/log', 'token=' . $this->session->data['token'], true),
+					'children' => array()
+				);
+			}
+
+			if ($this->user->hasPermission('access', 'tool/cache_cleaner')) {
+				$tool[] = array(
+					'name'	   => $this->language->get('text_cache_cleaner'),
+					'href'     => $this->url->link('tool/cache_cleaner', 'token=' . $this->session->data['token'], true),
 					'children' => array()
 				);
 			}

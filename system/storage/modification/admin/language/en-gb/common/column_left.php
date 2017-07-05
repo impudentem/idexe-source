@@ -17,6 +17,7 @@ $_['text_custom_field']              = 'Custom Fields';
 $_['text_dashboard']                 = 'Dashboard';
 $_['text_design']                    = 'Design';
 $_['text_download']                  = 'Downloads';
+$_['text_cache_cleaner']               = 'Cache Cleaner';
 $_['text_log']                       = 'Error Logs';
 $_['text_event']                     = 'Events';
 $_['text_extension']                 = 'Extensions';

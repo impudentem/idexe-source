@@ -11,10 +11,10 @@
 //////////////////////////////////////////////////////////////////
 
 // PATH TO CODIAD
-define("BASE_PATH", "/home/apoehali/apoehali.com.ua/idexe/vendors/codemanager");
+define("BASE_PATH", "/Users/impudentem/Sites/sites/idexe-source/vendors/codemanager");
 
 // BASE URL TO CODIAD (without trailing slash)
-define("BASE_URL", "idexe.apoehali.com.ua/vendors/codemanager");
+define("BASE_URL", "localhost/idexe-source/vendors/codemanager");
 
 // THEME : default, modern or clear (look at /themes)
 define("THEME", "default");
@@ -26,7 +26,7 @@ define("WHITEPATHS", BASE_PATH . ",/home");
 $cookie_lifetime = "0";
 
 // TIMEZONE
-date_default_timezone_set("Europe/Kiev");
+date_default_timezone_set("UTC");
 
 // External Authentification
 //define("AUTH_PATH", "/path/to/customauth.php");

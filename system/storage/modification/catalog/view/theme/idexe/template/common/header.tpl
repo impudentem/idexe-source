@@ -41,20 +41,21 @@
   <?php foreach ($analytics as $analytic) { ?>
     <?php echo $analytic; ?>
   <?php } ?>
+  
+  <link href="catalog/view/javascript/jquery/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+  <link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+  <link href="catalog/view/theme/idexe/css/jquery.formstyler.css" rel="stylesheet">
+  <link href="catalog/view/theme/idexe/css/jquery.bxslider.min.css" rel="stylesheet">
+  <link href="catalog/view/theme/idexe/css/font.css" rel="stylesheet">
+  <link href="catalog/view/theme/idexe/css/style.css" rel="stylesheet">
+  <link href="catalog/view/theme/idexe/css/media.css" rel="stylesheet">
+  <script type="text/javascript" src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js"></script>
 
                 <script src="catalog/view/javascript/jquery/jqBootstrapValidation.js" type="text/javascript"></script>
 				<script src="catalog/view/javascript/jquery/jquery.maskedinput.js" type="text/javascript"></script>
                 
 </head>
 <body class="<?php echo $class; ?>">
-<link href="catalog/view/javascript/jquery/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
-<link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-<link href="catalog/view/theme/idexe/css/jquery.formstyler.css" rel="stylesheet">
-<link href="catalog/view/theme/idexe/css/jquery.bxslider.min.css" rel="stylesheet">
-<link href="catalog/view/theme/idexe/css/font.css" rel="stylesheet">
-<link href="catalog/view/theme/idexe/css/style.css" rel="stylesheet">
-<link href="catalog/view/theme/idexe/css/media.css" rel="stylesheet">
-<script type="text/javascript" src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js"></script>
 <header>
     <div id="top"></div>
 

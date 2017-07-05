@@ -1,1 +1,1 @@
-<?php/*|[{"name":"Idexe","path":"\/home\/apoehali\/apoehali.com.ua\/idexe"}]|*/?>
+<?php/*|[{"name":"Idexe","path":"\/Users\/impudentem\/Sites\/sites\/idexe-source"}]|*/?>
