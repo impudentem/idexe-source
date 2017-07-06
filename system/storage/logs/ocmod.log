@@ -1582,3 +1582,462 @@ MOD: viethemes - All layouts
 CODE: return $query->rows;
 LINE: 31
 ----------------------------------------------------------------
+2017-07-06 3:46:56 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Cache Cleaner for OpenCart 2.3.0.x
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: $_['text_log']
+LINE: 20
+
+FILE: admin/controller/common/column_left.php
+CODE: if ($tool) {
+LINE: 669
+----------------------------------------------------------------
+MOD: AJAX Live Search
+
+FILE: catalog/controller/common/footer.php
+CODE: $this->load->language('common/footer');
+LINE: 15
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: </footer>
+LINE: 148
+
+FILE: catalog/view/theme/idexe/template/common/footer.tpl
+CODE: </footer>
+LINE: 197
+----------------------------------------------------------------
+MOD: viethemes - All layouts
+
+FILE: catalog/model/design/layout.php
+CODE: return $query->rows;
+LINE: 23
+----------------------------------------------------------------
+MOD: Blog for oc 2.3.2
+CODE: // Catalog
+LINE: 88
+CODE: $_['text_other_status']              = 'Other Statuses';
+LINE: 110
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: $_['text_other_status']              = 'Остальные заказы';
+LINE: 109
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: foreach ($parts as $part) {
+LINE: 22
+CODE: if ($url[0] == 'product_id') {
+LINE: 40
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 60
+CODE: if (!isset($this->request->get['route'])) {
+LINE: 77
+CODE: } elseif (isset($this->request->get['path'])) {
+LINE: 86
+CODE: if (($data['route'] == 'product/product' && $key == 'product_id') || (($data['route'] == 'product/manufacturer/info' || $data['route'] == 'product/product') && $key == 'manufacturer_id') || ($data['route'] == 'information/information' && $key == 'information_id')) {
+LINE: 108
+CODE: } elseif ($key == 'path') {
+LINE: 142
+----------------------------------------------------------------
+MOD: Brainy Filter
+
+FILE: catalog/controller/product/allproduct.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+LINE: 122
+CODE: = $this->model_catalog_product->getTotalProducts($filter_data)
+LINE: 120
+
+FILE: catalog/controller/product/catalog.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+LINE: 139
+CODE: = $this->model_catalog_product->getTotalProducts($filter_data)
+LINE: 137
+
+FILE: catalog/controller/product/category.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+LINE: 181
+CODE: = $this->model_catalog_product->getTotalProducts($filter_data)
+LINE: 179
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/product/live_search.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+LINE: 54
+CODE: = $this->model_catalog_product->getTotalProducts($filter_data)
+LINE: 56
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+LINE: 177
+CODE: = $this->model_catalog_product->getTotalProducts($filter_data)
+LINE: 175
+
+FILE: catalog/controller/product/product.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/product/search.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+LINE: 214
+CODE: = $this->model_catalog_product->getTotalProducts($filter_data)
+LINE: 212
+
+FILE: catalog/controller/product/special.php
+CODE: $this->model_catalog_product->getProducts($filter_data)
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 112
+CODE: $results = $this->model_catalog_category->getCategories($category_id);
+LINE: 175
+REGEX: /\'product\/category\', \'path\=\' \. \$this\-\>request\-\>get\[\'path\'\]/
+LINE: 144
+LINE: 194
+LINE: 276
+LINE: 282
+LINE: 288
+LINE: 294
+LINE: 300
+LINE: 307
+LINE: 313
+LINE: 320
+LINE: 326
+LINE: 353
+LINE: 379
+CODE: if ($page == 1) {
+LINE: 389
+CODE: if ($limit && ceil($product_total / $limit) > $page) {
+LINE: 401
+CODE: $product_total = $this->model_catalog_product->getTotalProductSpecials();
+LINE: 96
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 102
+CODE: if (isset($this->request->get['search']) || isset($this->request->get['tag'])) {
+LINE: 198
+
+FILE: catalog/model/catalog/product.php
+CODE: public function getProducts($data = array()) {
+LINE: 58
+CODE: public function getTotalProducts($data = array()) {
+LINE: 448
+
+FILE: catalog/model/checkout/order.php
+CODE: $this->cache->delete('product');
+LINE: 365
+----------------------------------------------------------------
+MOD: Callback and Feedback modal for OpenCart 2.x
+
+FILE: catalog/controller/common/header.php
+CODE: $data['text_all'] = $this->language->get('text_all');
+LINE: 87
+
+FILE: catalog/controller/common/home.php
+CODE: public function index() {
+LINE: 15
+
+FILE: catalog/language/ru-ru/common/header.php
+CODE: // Text
+LINE: 18
+
+FILE: catalog/language/en-gb/common/header.php
+CODE: // Text
+LINE: 18
+
+FILE: catalog/language/uk-ua/common/header.php
+CODE: // Text
+LINE: 23
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: </head>
+LINE: 42
+CODE: <div id="top">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/idexe/template/common/header.tpl
+CODE: </head>
+LINE: 53
+CODE: <div id="top">
+LINE: 307
+CODE: </footer>
+LINE: 49
+CODE: </footer>
+LINE: 98
+----------------------------------------------------------------
+MOD: CKEditor Full v4.6.2
+
+FILE: admin/view/template/common/header.tpl
+CODE: <title><?php echo $title; ?></title>
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['description'] = $this->document->getDescription();
+LINE: 15
+
+FILE: admin/controller/common/filemanager.php
+CODE: // Return the thumbnail for the file manager to show a thumbnail
+LINE: 137
+CODE: {jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF}
+LINE: 47
+CODE: $this->model_tool_image->resize(utf8_substr($image, utf8_strlen(DIR_IMAGE)), 100, 100)
+LINE: 86
+CODE: $data['images'][] = array(
+LINE: 84
+LINE: 99
+CODE: 'png'
+LINE: 279
+CODE: 'image/gif'
+LINE: 307
+
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <script type="text/javascript"><!--
+LINE: 60
+CODE: $('a.thumbnail').on('click', function(e) {
+LINE: 71
+----------------------------------------------------------------
+MOD: CodeManager by iSenseLabs (Pro)
+
+FILE: admin/view/template/extension/module/codemanager/codemanager.tpl
+CODE: <button type="submit" id="showUsers" class="btn btn-default btn-sm"><i class="fa fa-eye"></i>&nbsp;&nbsp;View all users with access</button>
+LINE: 41
+CODE: <div class="modal fade" id="modalMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+LINE: 91
+CODE: <button type="submit" id="wantMore" class="btn btn-success btn-xs">More awesome features&nbsp;<i class="fa fa-question"></i></button>
+LINE: 12
+CODE: <?php echo $heading_title; ?>
+LINE: 4
+CODE: <div class="modal fade" id="modalMore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+LINE: 151
+
+FILE: admin/controller/extension/module/codemanager.php
+CODE: private function generateRandomEmail($length = 7) {
+LINE: 298
+----------------------------------------------------------------
+MOD: Fast Order for OpenCart 2.x
+CODE: $data['entry_qty'] = $this->language->get('entry_qty');
+LINE: 260
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 291
+CODE: private $error = array();
+LINE: 9
+
+FILE: catalog/language/uk-ua/product/product.php
+CODE: // Entry
+LINE: 53
+
+FILE: catalog/language/ru-ru/product/product.php
+CODE: // Entry
+LINE: 48
+
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <?php echo $content_bottom; ?>
+LINE: 496
+CODE: <?php echo $footer; ?>
+LINE: 759
+
+FILE: catalog/view/theme/idexe/template/product/product.tpl
+CODE: <?php echo $content_bottom; ?>
+LINE: 363
+CODE: <?php echo $footer; ?>
+LINE: 626
+----------------------------------------------------------------
+MOD: Installation without FTP settings
+
+FILE: admin/controller/extension/installer.php
+CODE: $data['button_continue'] =
+LINE: 37
+CODE: 'extension/installer/ftp'
+LINE: 136
+CODE: function ftp(
+LINE: 301
+CODE: if (!$this->config->get('config_ftp_status')
+LINE: 319
+
+FILE: admin/language/en-gb/extension/installer.php
+CODE: $_['text_clear']
+LINE: 17
+
+FILE: admin/view/template/extension/installer.tpl
+CODE: <form class="form
+LINE: 34
+CODE: timer = setInterval(
+LINE: 87
+CODE: n next()
+LINE: 156
+CODE: 'path=' + data.path
+LINE: 167
+----------------------------------------------------------------
+MOD: NitroPack Admin Panel Link
+CODE: if ($tool) {
+LINE: 725
+----------------------------------------------------------------
+MOD: NitroPack CDN
+
+FILE: catalog/model/tool/image.php
+CODE: class ModelToolImage extends Model {
+LINE: 11
+CODE: return $this->config->get('config_ssl') . 'image/' . $new_image;
+LINE: 56
+LINE: 104
+LINE: 152
+CODE: return $this->config->get('config_url') . 'image/' . $new_image;
+LINE: 67
+LINE: 124
+LINE: 181
+CODE: return $this->config->get('config_ssl') . 'image/' . $image_new;
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return (defined('HTTPS_STATIC_CDN') ? HTTPS_STATIC_CDN : $this->config->get('config_ssl')) . 'image/' . $new_image;
+NOT FOUND - OPERATION SKIPPED!
+CODE: return (defined('HTTP_STATIC_CDN') ? HTTP_STATIC_CDN : $this->config->get('config_url')) . 'image/' . $new_image;
+NOT FOUND - OPERATION SKIPPED!
+CODE: return (defined('HTTPS_STATIC_CDN') ? HTTPS_STATIC_CDN : $this->config->get('config_ssl')) . 'image/' . $image_new;
+NOT FOUND - OPERATION SKIPPED!
+CODE: return (defined('HTTP_STATIC_CDN') ? HTTP_STATIC_CDN : $this->config->get('config_url')) . 'image/' . $image_new;
+NOT FOUND - OPERATION SKIPPED!
+CODE: $data['styles'] = $this->document->getStyles();
+LINE: 38
+CODE: $data['scripts'] = $this->document->getScripts();
+LINE: 45
+----------------------------------------------------------------
+MOD: NitroPack CSS and JavaScript Minify
+
+FILE: system/library/document.php
+CODE: return $this->styles;
+LINE: 59
+CODE: return $this->scripts[$postion];
+LINE: 74
+CODE: return $this->scripts;
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: NitroPack Database Cache
+
+FILE: system/library/db.php
+CODE: return $this->db->query($sql);
+NOT FOUND - OPERATION SKIPPED!
+CODE: return $this->adaptor->query($sql, $params);
+LINE: 72
+----------------------------------------------------------------
+MOD: NitroPack Database Singleton
+CODE: if (class_exists($class)) {
+LINE: 18
+----------------------------------------------------------------
+MOD: NitroPack Image Quality Override
+
+FILE: system/library/image.php
+CODE: public function save($file, $quality = 90) {
+LINE: 60
+REGEX: ~public function resize.*~
+LINE: 13
+CODE: if (!is_file(DIR_IMAGE . $image_new) || (filectime(DIR_IMAGE . $image_old) > filectime(DIR_IMAGE . $image_new))) {
+NOT FOUND - OPERATIONS ABORTED!
+CODE: if ($width_orig != $width || $height_orig != $height) {
+LINE: 75
+CODE: if ($width_orig != $width || $height_orig != $height) {
+LINE: 75
+----------------------------------------------------------------
+MOD: NitroPack jQuery from Google
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 22
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 23
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 22
+CODE: <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+LINE: 23
+----------------------------------------------------------------
+MOD: NitroPack Page Cache
+
+FILE: system/engine/registry.php
+CODE: $this->data[$key] = $value;
+LINE: 20
+
+FILE: system/library/response.php
+CODE: $this->level = $level;
+LINE: 19
+CODE: echo $output;
+LINE: 74
+CODE: echo $output;
+LINE: 88
+
+FILE: catalog/controller/common/language.php
+CODE: $this->session->data['language'] = $this->request->post['code'];
+LINE: 52
+
+FILE: catalog/controller/common/currency.php
+CODE: $this->currency->set($this->request->post['code']);
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->session->data['currency'] = $this->request->post['code'];
+LINE: 56
+CODE: public function getProduct($product_id) {
+LINE: 13
+
+FILE: catalog/model/catalog/category.php
+CODE: public function getCategory($category_id) {
+LINE: 9
+
+FILE: admin/model/catalog/product.php
+CODE: public function editProduct($product_id, $data) {
+LINE: 138
+CODE: public function addProduct($data) {
+LINE: 10
+CODE: public function copyProduct($product_id) {
+LINE: 306
+CODE: public function deleteProduct($product_id) {
+LINE: 345
+CODE: $this->db->query("UPDATE " . DB_PREFIX . "product SET quantity = (quantity - " . (int)$order_product['quantity'] . ") WHERE product_id = '" . (int)$order_product['product_id'] . "' AND subtract = '1'");
+LINE: 311
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "product` SET quantity = (quantity + " . (int)$product['quantity'] . ") WHERE product_id = '" . (int)$product['product_id'] . "' AND subtract = '1'");
+LINE: 338
+----------------------------------------------------------------
+MOD: NitroPack System Cache Override
+
+FILE: system/library/cache.php
+CODE: public function __construct($driver, $expire = 3600) {
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function __construct($adaptor, $expire = 3600) {
+LINE: 12
+----------------------------------------------------------------
+MOD: simple url rewrite
+
+FILE: catalog/controller/startup/startup.php
+CODE: new Url
+LINE: 36
+----------------------------------------------------------------
+MOD: viethemes - All layouts
+CODE: return $query->rows;
+LINE: 31
+----------------------------------------------------------------

@@ -40,7 +40,7 @@
               <?php } ?>
             <?php } ?>
             <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
-            <li><a href="<?php echo $action; ?>"><?php echo $text_actions; ?></a></li>
+            <li><a href="<?php echo $actions; ?>"><?php echo $text_actions; ?></a></li>
             <li><a href="javascript: void(0);"><?php echo $text_catalog; ?>(pdf)</a></li>
           </ul>
         </nav>

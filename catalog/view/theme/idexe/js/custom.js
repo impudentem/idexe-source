@@ -35,10 +35,27 @@ $(document).ready(function() {
 
 
     /*  formstyler  */
-
-    $('select').styler({
-        selectSmartPositioning: false
+    // jQuery.ajaxSetup({complete: function(){$("select").styler();console.log("ajaxSetup"); }});
+    $('select').not('[name=\'zone_id\'], [name=\'country_id\']').styler();
+    $('select[name=\'zone_id\'], select[name=\'country_id\']').styler({
+      selectSearch: true
     });
+    $('select[name=\'zone_id\'], select[name=\'country_id\']').change(function() {
+    	// var value = $(this).val();
+    	// $(this).find('option').each(function() {
+    	// 	if ( $(this).val() == value ) $(this).prop('disabled', true);
+    	// });
+    	// $('select[name=\'zone_id\']').styler({
+      //   selectSearch: true
+      // });
+      setTimeout(function() {
+        $('select[name=\'zone_id\']').trigger('refresh');
+      }, 100)
+    });
+
+    // $('select').styler({
+    //     selectSmartPositioning: false
+    // });
 
     /* bx slider gallery */
 
@@ -136,7 +153,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-

@@ -421,6 +421,7 @@ $('select[name=\'country_id\']').on('change', function() {
 			}
 
 			$('select[name=\'zone_id\']').html(html);
+      $('select[name=\'zone_id\']').trigger('change');
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
 			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
